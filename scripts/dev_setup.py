@@ -6,11 +6,8 @@
 from __future__ import print_function
 
 import sys
-import glob
 import os
 from subprocess import check_call, CalledProcessError
-
-from azure.devops.client import *
 
 
 def exec_command(command):
