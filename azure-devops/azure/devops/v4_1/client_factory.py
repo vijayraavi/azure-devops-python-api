@@ -14,6 +14,13 @@ class ClientFactoryV4_1(object):
     def __init__(self, connection):
         self._connection = connection
 
+    def get_accounts_client(self):
+        """get_accounts_client.
+        Gets the 4.1 version of the AccountsClient
+        :rtype: :class:`<AccountsClient> <azure.devops.v4_1.accounts.accounts_client.AccountsClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.accounts.accounts_client.AccountsClient')
+
     def get_build_client(self):
         """get_build_client.
         Gets the 4.1 version of the BuildClient
@@ -27,6 +34,20 @@ class ClientFactoryV4_1(object):
         :rtype: :class:`<ClientTraceClient> <azure.devops.v4_1.client_trace.client_trace_client.ClientTraceClient>`
         """
         return self._connection.get_client('azure.devops.v4_1.client_trace.client_trace_client.ClientTraceClient')
+
+    def get_cloud_load_test_client(self):
+        """get_cloud_load_test_client.
+        Gets the 4.1 version of the CloudLoadTestClient
+        :rtype: :class:`<CloudLoadTestClient> <azure.devops.v4_1.cloud_load_test.cloud_load_test_client.CloudLoadTestClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.cloud_load_test.cloud_load_test_client.CloudLoadTestClient')
+
+    def get_contributions_client(self):
+        """get_contributions_client.
+        Gets the 4.1 version of the ContributionsClient
+        :rtype: :class:`<ContributionsClient> <azure.devops.v4_1.contributions.contributions_client.ContributionsClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.contributions.contributions_client.ContributionsClient')
 
     def get_core_client(self):
         """get_core_client.
@@ -70,6 +91,20 @@ class ClientFactoryV4_1(object):
         """
         return self._connection.get_client('azure.devops.v4_1.feature_management.feature_management_client.FeatureManagementClient')
 
+    def get_feed_client(self):
+        """get_feed_client.
+        Gets the 4.1 version of the FeedClient
+        :rtype: :class:`<FeedClient> <azure.devops.v4_1.feed.feed_client.FeedClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.feed.feed_client.FeedClient')
+
+    def get_feed_token_client(self):
+        """get_feed_token_client.
+        Gets the 4.1 version of the FeedTokenClient
+        :rtype: :class:`<FeedTokenClient> <azure.devops.v4_1.feed_token.feed_token_client.FeedTokenClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.feed_token.feed_token_client.FeedTokenClient')
+
     def get_file_container_client(self):
         """get_file_container_client.
         Gets the 4.1 version of the FileContainerClient
@@ -90,6 +125,20 @@ class ClientFactoryV4_1(object):
         :rtype: :class:`<GitClient> <azure.devops.v4_1.git.git_client.GitClient>`
         """
         return self._connection.get_client('azure.devops.v4_1.git.git_client.GitClient')
+
+    def get_graph_client(self):
+        """get_graph_client.
+        Gets the 4.1 version of the GraphClient
+        :rtype: :class:`<GraphClient> <azure.devops.v4_1.graph.graph_client.GraphClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.graph.graph_client.GraphClient')
+
+    def get_identity_client(self):
+        """get_identity_client.
+        Gets the 4.1 version of the IdentityClient
+        :rtype: :class:`<IdentityClient> <azure.devops.v4_1.identity.identity_client.IdentityClient>`
+        """
+        return self._connection.get_client('azure.devops.v4_1.identity.identity_client.IdentityClient')
 
     def get_licensing_client(self):
         """get_licensing_client.
@@ -259,19 +308,19 @@ class ClientFactoryV4_1(object):
         """
         return self._connection.get_client('azure.devops.v4_1.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
 
-    def get_work_item_tracking_client(self):
-        """get_work_item_tracking_client.
-        Gets the 4.1 version of the WorkItemTrackingClient
-        :rtype: :class:`<WorkItemTrackingClient> <azure.devops.v4_1.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient>`
+    def get_work_item_tracking_process_client(self):
+        """get_work_item_tracking_process_client.
+        Gets the 4.1 version of the WorkItemTrackingProcessClient
+        :rtype: :class:`<WorkItemTrackingProcessClient> <azure.devops.v4_1.work_item_tracking_process.work_item_tracking_process_client.WorkItemTrackingProcessClient>`
         """
-        return self._connection.get_client('azure.devops.v4_1.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
+        return self._connection.get_client('azure.devops.v4_1.work_item_tracking_process.work_item_tracking_process_client.WorkItemTrackingProcessClient')
 
-    def get_work_item_tracking_client(self):
-        """get_work_item_tracking_client.
-        Gets the 4.1 version of the WorkItemTrackingClient
-        :rtype: :class:`<WorkItemTrackingClient> <azure.devops.v4_1.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient>`
+    def get_work_item_tracking_process_definitions_client(self):
+        """get_work_item_tracking_process_definitions_client.
+        Gets the 4.1 version of the WorkItemTrackingProcessDefinitionsClient
+        :rtype: :class:`<WorkItemTrackingProcessDefinitionsClient> <azure.devops.v4_1.work_item_tracking_process_definitions.work_item_tracking_process_definitions_client.WorkItemTrackingProcessDefinitionsClient>`
         """
-        return self._connection.get_client('azure.devops.v4_1.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
+        return self._connection.get_client('azure.devops.v4_1.work_item_tracking_process_definitions.work_item_tracking_process_definitions_client.WorkItemTrackingProcessDefinitionsClient')
 
     def get_work_item_tracking_process_template_client(self):
         """get_work_item_tracking_process_template_client.

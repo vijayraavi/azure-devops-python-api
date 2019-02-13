@@ -231,19 +231,19 @@ class ClientFactoryV4_0(object):
         """
         return self._connection.get_client('azure.devops.v4_0.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
 
-    def get_work_item_tracking_client(self):
-        """get_work_item_tracking_client.
-        Gets the 4.0 version of the WorkItemTrackingClient
-        :rtype: :class:`<WorkItemTrackingClient> <azure.devops.v4_0.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient>`
+    def get_work_item_tracking_process_client(self):
+        """get_work_item_tracking_process_client.
+        Gets the 4.0 version of the WorkItemTrackingProcessClient
+        :rtype: :class:`<WorkItemTrackingProcessClient> <azure.devops.v4_0.work_item_tracking_process.work_item_tracking_process_client.WorkItemTrackingProcessClient>`
         """
-        return self._connection.get_client('azure.devops.v4_0.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
+        return self._connection.get_client('azure.devops.v4_0.work_item_tracking_process.work_item_tracking_process_client.WorkItemTrackingProcessClient')
 
-    def get_work_item_tracking_client(self):
-        """get_work_item_tracking_client.
-        Gets the 4.0 version of the WorkItemTrackingClient
-        :rtype: :class:`<WorkItemTrackingClient> <azure.devops.v4_0.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient>`
+    def get_work_item_tracking_process_definitions_client(self):
+        """get_work_item_tracking_process_definitions_client.
+        Gets the 4.0 version of the WorkItemTrackingProcessDefinitionsClient
+        :rtype: :class:`<WorkItemTrackingProcessDefinitionsClient> <azure.devops.v4_0.work_item_tracking_process_definitions.work_item_tracking_process_definitions_client.WorkItemTrackingProcessDefinitionsClient>`
         """
-        return self._connection.get_client('azure.devops.v4_0.work_item_tracking.work_item_tracking_client.WorkItemTrackingClient')
+        return self._connection.get_client('azure.devops.v4_0.work_item_tracking_process_definitions.work_item_tracking_process_definitions_client.WorkItemTrackingProcessDefinitionsClient')
 
     def get_work_item_tracking_process_template_client(self):
         """get_work_item_tracking_process_template_client.
