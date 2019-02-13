@@ -92,7 +92,7 @@ class NuGetClient(Client):
         :param str feed_id:
         :param str package_name:
         :param str package_version:
-        :rtype: :class:`<NuGetPackageVersionDeletionState> <azure.devops.v4_1.nuGet.models.NuGetPackageVersionDeletionState>`
+        :rtype: :class:`<NuGetPackageVersionDeletionState> <azure.devops.v4_1.nuget.models.NuGetPackageVersionDeletionState>`
         """
         route_values = {}
         if feed_id is not None:
@@ -135,7 +135,7 @@ class NuGetClient(Client):
         :param str feed_id:
         :param str package_name:
         :param str package_version:
-        :rtype: :class:`<Package> <azure.devops.v4_1.nuGet.models.Package>`
+        :rtype: :class:`<Package> <azure.devops.v4_1.nuget.models.Package>`
         """
         route_values = {}
         if feed_id is not None:
@@ -157,7 +157,7 @@ class NuGetClient(Client):
         :param str package_name:
         :param str package_version:
         :param bool show_deleted:
-        :rtype: :class:`<Package> <azure.devops.v4_1.nuGet.models.Package>`
+        :rtype: :class:`<Package> <azure.devops.v4_1.nuget.models.Package>`
         """
         route_values = {}
         if feed_id is not None:

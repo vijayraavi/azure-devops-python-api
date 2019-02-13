@@ -30,7 +30,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Creates a single behavior in the given process.
         :param :class:`<BehaviorCreateModel> <azure.devops.v4_1.work_item_tracking.models.BehaviorCreateModel>` behavior:
         :param str process_id: The ID of the process
-        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work-item-tracking.models.BehaviorModel>`
+        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work_item_tracking.models.BehaviorModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -64,7 +64,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Returns a single behavior in the process.
         :param str process_id: The ID of the process
         :param str behavior_id: The ID of the behavior
-        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work-item-tracking.models.BehaviorModel>`
+        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work_item_tracking.models.BehaviorModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -98,7 +98,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<BehaviorReplaceModel> <azure.devops.v4_1.work_item_tracking.models.BehaviorReplaceModel>` behavior_data:
         :param str process_id: The ID of the process
         :param str behavior_id: The ID of the behavior
-        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work-item-tracking.models.BehaviorModel>`
+        :rtype: :class:`<BehaviorModel> <azure.devops.v4_1.work_item_tracking.models.BehaviorModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -120,7 +120,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
         :param str group_id: The ID of the group to add the control to
-        :rtype: :class:`<Control> <azure.devops.v4_1.work-item-tracking.models.Control>`
+        :rtype: :class:`<Control> <azure.devops.v4_1.work_item_tracking.models.Control>`
         """
         route_values = {}
         if process_id is not None:
@@ -145,7 +145,7 @@ class WorkItemTrackingClient(Client):
         :param str wit_ref_name: The reference name of the work item type
         :param str group_id: The ID of the group
         :param str control_id: The ID of the control
-        :rtype: :class:`<Control> <azure.devops.v4_1.work-item-tracking.models.Control>`
+        :rtype: :class:`<Control> <azure.devops.v4_1.work_item_tracking.models.Control>`
         """
         route_values = {}
         if process_id is not None:
@@ -195,7 +195,7 @@ class WorkItemTrackingClient(Client):
         :param str group_id: The ID of the group to move the control to
         :param str control_id: The id of the control
         :param str remove_from_group_id: The group to remove the control from
-        :rtype: :class:`<Control> <azure.devops.v4_1.work-item-tracking.models.Control>`
+        :rtype: :class:`<Control> <azure.devops.v4_1.work_item_tracking.models.Control>`
         """
         route_values = {}
         if process_id is not None:
@@ -223,7 +223,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Creates a single field in the process.
         :param :class:`<FieldModel> <azure.devops.v4_1.work_item_tracking.models.FieldModel>` field:
         :param str process_id: The ID of the process
-        :rtype: :class:`<FieldModel> <azure.devops.v4_1.work-item-tracking.models.FieldModel>`
+        :rtype: :class:`<FieldModel> <azure.devops.v4_1.work_item_tracking.models.FieldModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -241,7 +241,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Updates a given field in the process.
         :param :class:`<FieldUpdate> <azure.devops.v4_1.work_item_tracking.models.FieldUpdate>` field:
         :param str process_id: The ID of the process
-        :rtype: :class:`<FieldModel> <azure.devops.v4_1.work-item-tracking.models.FieldModel>`
+        :rtype: :class:`<FieldModel> <azure.devops.v4_1.work_item_tracking.models.FieldModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -262,7 +262,7 @@ class WorkItemTrackingClient(Client):
         :param str wit_ref_name: The reference name of the work item type
         :param str page_id: The ID of the page to add the group to
         :param str section_id: The ID of the section to add the group to
-        :rtype: :class:`<Group> <azure.devops.v4_1.work-item-tracking.models.Group>`
+        :rtype: :class:`<Group> <azure.devops.v4_1.work_item_tracking.models.Group>`
         """
         route_values = {}
         if process_id is not None:
@@ -290,7 +290,7 @@ class WorkItemTrackingClient(Client):
         :param str page_id: The ID of the page the group is in
         :param str section_id: The ID of the section the group is in
         :param str group_id: The ID of the group
-        :rtype: :class:`<Group> <azure.devops.v4_1.work-item-tracking.models.Group>`
+        :rtype: :class:`<Group> <azure.devops.v4_1.work_item_tracking.models.Group>`
         """
         route_values = {}
         if process_id is not None:
@@ -347,7 +347,7 @@ class WorkItemTrackingClient(Client):
         :param str group_id: The ID of the group
         :param str remove_from_page_id: ID of the page to remove the group from
         :param str remove_from_section_id: ID of the section to remove the group from
-        :rtype: :class:`<Group> <azure.devops.v4_1.work-item-tracking.models.Group>`
+        :rtype: :class:`<Group> <azure.devops.v4_1.work_item_tracking.models.Group>`
         """
         route_values = {}
         if process_id is not None:
@@ -384,7 +384,7 @@ class WorkItemTrackingClient(Client):
         :param str section_id: The ID of the section the group is in
         :param str group_id: The ID of the group
         :param str remove_from_section_id: ID of the section to remove the group from
-        :rtype: :class:`<Group> <azure.devops.v4_1.work-item-tracking.models.Group>`
+        :rtype: :class:`<Group> <azure.devops.v4_1.work_item_tracking.models.Group>`
         """
         route_values = {}
         if process_id is not None:
@@ -414,7 +414,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Gets the form layout
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
-        :rtype: :class:`<FormLayout> <azure.devops.v4_1.work-item-tracking.models.FormLayout>`
+        :rtype: :class:`<FormLayout> <azure.devops.v4_1.work_item_tracking.models.FormLayout>`
         """
         route_values = {}
         if process_id is not None:
@@ -441,7 +441,7 @@ class WorkItemTrackingClient(Client):
         """CreateList.
         [Preview API] Creates a picklist.
         :param :class:`<PickListModel> <azure.devops.v4_1.work_item_tracking.models.PickListModel>` picklist:
-        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work-item-tracking.models.PickListModel>`
+        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work_item_tracking.models.PickListModel>`
         """
         content = self._serialize.body(picklist, 'PickListModel')
         response = self._send(http_method='POST',
@@ -467,7 +467,7 @@ class WorkItemTrackingClient(Client):
         """GetList.
         [Preview API] Returns a picklist.
         :param str list_id: The ID of the list
-        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work-item-tracking.models.PickListModel>`
+        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work_item_tracking.models.PickListModel>`
         """
         route_values = {}
         if list_id is not None:
@@ -483,7 +483,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Updates a list.
         :param :class:`<PickListModel> <azure.devops.v4_1.work_item_tracking.models.PickListModel>` picklist:
         :param str list_id: The ID of the list
-        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work-item-tracking.models.PickListModel>`
+        :rtype: :class:`<PickListModel> <azure.devops.v4_1.work_item_tracking.models.PickListModel>`
         """
         route_values = {}
         if list_id is not None:
@@ -502,7 +502,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<Page> <azure.devops.v4_1.work_item_tracking.models.Page>` page: The page
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
-        :rtype: :class:`<Page> <azure.devops.v4_1.work-item-tracking.models.Page>`
+        :rtype: :class:`<Page> <azure.devops.v4_1.work_item_tracking.models.Page>`
         """
         route_values = {}
         if process_id is not None:
@@ -523,7 +523,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<Page> <azure.devops.v4_1.work_item_tracking.models.Page>` page: The page
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
-        :rtype: :class:`<Page> <azure.devops.v4_1.work-item-tracking.models.Page>`
+        :rtype: :class:`<Page> <azure.devops.v4_1.work_item_tracking.models.Page>`
         """
         route_values = {}
         if process_id is not None:
@@ -563,7 +563,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemStateInputModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemStateInputModel>` state_model:
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
-        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemStateResultModel>`
+        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemStateResultModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -603,7 +603,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
         :param str state_id: The ID of the state
-        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemStateResultModel>`
+        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemStateResultModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -643,7 +643,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
         :param str state_id: The ID of the state
-        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemStateResultModel>`
+        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemStateResultModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -667,7 +667,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: ID of the process
         :param str wit_ref_name: The reference name of the work item type
         :param str state_id: ID of the state
-        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemStateResultModel>`
+        :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemStateResultModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -690,7 +690,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeBehavior>` behavior:
         :param str process_id: The ID of the process
         :param str wit_ref_name_for_behaviors: Work item type reference name for the behavior
-        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeBehavior>`
+        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeBehavior>`
         """
         route_values = {}
         if process_id is not None:
@@ -711,7 +711,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name_for_behaviors: Work item type reference name for the behavior
         :param str behavior_ref_name: The reference name of the behavior
-        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeBehavior>`
+        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeBehavior>`
         """
         route_values = {}
         if process_id is not None:
@@ -769,7 +769,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeBehavior>` behavior:
         :param str process_id: The ID of the process
         :param str wit_ref_name_for_behaviors: Work item type reference name for the behavior
-        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeBehavior>`
+        :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeBehavior>`
         """
         route_values = {}
         if process_id is not None:
@@ -789,7 +789,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Creates a work item type in the process.
         :param :class:`<WorkItemTypeModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeModel>` work_item_type:
         :param str process_id: The ID of the process
-        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeModel>`
+        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -824,7 +824,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
         :param str expand:
-        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeModel>`
+        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -867,7 +867,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemTypeUpdateModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeUpdateModel>` work_item_type_update:
         :param str process_id: The ID of the process
         :param str wit_ref_name: The reference name of the work item type
-        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeModel>`
+        :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -888,7 +888,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemTypeFieldModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeFieldModel>` field:
         :param str process_id: The ID of the process
         :param str wit_ref_name_for_fields: Work item type reference name for the field
-        :rtype: :class:`<WorkItemTypeFieldModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeFieldModel>`
+        :rtype: :class:`<WorkItemTypeFieldModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeFieldModel>`
         """
         route_values = {}
         if process_id is not None:
@@ -909,7 +909,7 @@ class WorkItemTrackingClient(Client):
         :param str process_id: The ID of the process
         :param str wit_ref_name_for_fields: Work item type reference name for fields
         :param str field_ref_name: The reference name of the field
-        :rtype: :class:`<WorkItemTypeFieldModel> <azure.devops.v4_1.work-item-tracking.models.WorkItemTypeFieldModel>`
+        :rtype: :class:`<WorkItemTypeFieldModel> <azure.devops.v4_1.work_item_tracking.models.WorkItemTypeFieldModel>`
         """
         route_values = {}
         if process_id is not None:

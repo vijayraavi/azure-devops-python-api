@@ -31,7 +31,7 @@ class ExtensionManagementClient(Client):
         :param str item_id:
         :param bool test_commerce:
         :param bool is_free_or_trial_install:
-        :rtype: :class:`<AcquisitionOptions> <azure.devops.v4_0.extension-management.models.AcquisitionOptions>`
+        :rtype: :class:`<AcquisitionOptions> <azure.devops.v4_0.extension_management.models.AcquisitionOptions>`
         """
         query_parameters = {}
         if item_id is not None:
@@ -50,7 +50,7 @@ class ExtensionManagementClient(Client):
         """RequestAcquisition.
         [Preview API]
         :param :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension_management.models.ExtensionAcquisitionRequest>` acquisition_request:
-        :rtype: :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension-management.models.ExtensionAcquisitionRequest>`
+        :rtype: :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension_management.models.ExtensionAcquisitionRequest>`
         """
         content = self._serialize.body(acquisition_request, 'ExtensionAcquisitionRequest')
         response = self._send(http_method='POST',
@@ -65,7 +65,7 @@ class ExtensionManagementClient(Client):
         :param str publisher_name:
         :param str extension_name:
         :param str registration_id:
-        :rtype: :class:`<ExtensionAuthorization> <azure.devops.v4_0.extension-management.models.ExtensionAuthorization>`
+        :rtype: :class:`<ExtensionAuthorization> <azure.devops.v4_0.extension_management.models.ExtensionAuthorization>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -89,7 +89,7 @@ class ExtensionManagementClient(Client):
         :param str scope_type:
         :param str scope_value:
         :param str collection_name:
-        :rtype: :class:`<object> <azure.devops.v4_0.extension-management.models.object>`
+        :rtype: :class:`<object> <azure.devops.v4_0.extension_management.models.object>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -147,7 +147,7 @@ class ExtensionManagementClient(Client):
         :param str scope_value:
         :param str collection_name:
         :param str document_id:
-        :rtype: :class:`<object> <azure.devops.v4_0.extension-management.models.object>`
+        :rtype: :class:`<object> <azure.devops.v4_0.extension_management.models.object>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -204,7 +204,7 @@ class ExtensionManagementClient(Client):
         :param str scope_type:
         :param str scope_value:
         :param str collection_name:
-        :rtype: :class:`<object> <azure.devops.v4_0.extension-management.models.object>`
+        :rtype: :class:`<object> <azure.devops.v4_0.extension_management.models.object>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -234,7 +234,7 @@ class ExtensionManagementClient(Client):
         :param str scope_type:
         :param str scope_value:
         :param str collection_name:
-        :rtype: :class:`<object> <azure.devops.v4_0.extension-management.models.object>`
+        :rtype: :class:`<object> <azure.devops.v4_0.extension_management.models.object>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -339,7 +339,7 @@ class ExtensionManagementClient(Client):
         """UpdateInstalledExtension.
         [Preview API]
         :param :class:`<InstalledExtension> <azure.devops.v4_0.extension_management.models.InstalledExtension>` extension:
-        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension-management.models.InstalledExtension>`
+        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension_management.models.InstalledExtension>`
         """
         content = self._serialize.body(extension, 'InstalledExtension')
         response = self._send(http_method='PATCH',
@@ -354,7 +354,7 @@ class ExtensionManagementClient(Client):
         :param str publisher_name:
         :param str extension_name:
         :param [str] asset_types:
-        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension-management.models.InstalledExtension>`
+        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension_management.models.InstalledExtension>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -378,7 +378,7 @@ class ExtensionManagementClient(Client):
         :param str publisher_name:
         :param str extension_name:
         :param str version:
-        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension-management.models.InstalledExtension>`
+        :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension_management.models.InstalledExtension>`
         """
         route_values = {}
         if publisher_name is not None:
@@ -421,7 +421,7 @@ class ExtensionManagementClient(Client):
         """GetPolicies.
         [Preview API]
         :param str user_id:
-        :rtype: :class:`<UserExtensionPolicy> <azure.devops.v4_0.extension-management.models.UserExtensionPolicy>`
+        :rtype: :class:`<UserExtensionPolicy> <azure.devops.v4_0.extension_management.models.UserExtensionPolicy>`
         """
         route_values = {}
         if user_id is not None:
@@ -519,7 +519,7 @@ class ExtensionManagementClient(Client):
         :param str publisher_name:
         :param str extension_name:
         :param str request_message:
-        :rtype: :class:`<RequestedExtension> <azure.devops.v4_0.extension-management.models.RequestedExtension>`
+        :rtype: :class:`<RequestedExtension> <azure.devops.v4_0.extension_management.models.RequestedExtension>`
         """
         route_values = {}
         if publisher_name is not None:

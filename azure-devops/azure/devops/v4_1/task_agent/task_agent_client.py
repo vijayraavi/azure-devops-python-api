@@ -30,7 +30,7 @@ class TaskAgentClient(Client):
         [Preview API] Create a deployment group.
         :param :class:`<DeploymentGroupCreateParameter> <azure.devops.v4_1.task_agent.models.DeploymentGroupCreateParameter>` deployment_group: Deployment group to create.
         :param str project: Project ID or project name
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -66,7 +66,7 @@ class TaskAgentClient(Client):
         :param int deployment_group_id: ID of the deployment group.
         :param str action_filter: Get the deployment group only if this action can be performed on it.
         :param str expand: Include these additional details in the returned object.
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -127,7 +127,7 @@ class TaskAgentClient(Client):
         :param :class:`<DeploymentGroupUpdateParameter> <azure.devops.v4_1.task_agent.models.DeploymentGroupUpdateParameter>` deployment_group: Deployment group to update.
         :param str project: Project ID or project name
         :param int deployment_group_id: ID of the deployment group.
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -168,7 +168,7 @@ class TaskAgentClient(Client):
         :param int deployment_group_id: ID of the deployment group to which deployment target belongs.
         :param int target_id: ID of the deployment target to return.
         :param str expand: Include these additional details in the returned objects.
-        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_1.task-agent.models.DeploymentMachine>`
+        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_1.task_agent.models.DeploymentMachine>`
         """
         route_values = {}
         if project is not None:
@@ -258,7 +258,7 @@ class TaskAgentClient(Client):
         [Preview API] Create a task group.
         :param :class:`<TaskGroupCreateParameter> <azure.devops.v4_1.task_agent.models.TaskGroupCreateParameter>` task_group: Task group object to create.
         :param str project: Project ID or project name
-        :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task-agent.models.TaskGroup>`
+        :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task_agent.models.TaskGroup>`
         """
         route_values = {}
         if project is not None:
@@ -336,7 +336,7 @@ class TaskAgentClient(Client):
         :param :class:`<TaskGroupUpdateParameter> <azure.devops.v4_1.task_agent.models.TaskGroupUpdateParameter>` task_group: Task group to update.
         :param str project: Project ID or project name
         :param str task_group_id: Id of the task group to update.
-        :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task-agent.models.TaskGroup>`
+        :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task_agent.models.TaskGroup>`
         """
         route_values = {}
         if project is not None:
@@ -356,7 +356,7 @@ class TaskAgentClient(Client):
         [Preview API] Add a variable group.
         :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task_agent.models.VariableGroupParameters>` group: Variable group to add.
         :param str project: Project ID or project name
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:
@@ -390,7 +390,7 @@ class TaskAgentClient(Client):
         [Preview API] Get a variable group.
         :param str project: Project ID or project name
         :param int group_id: Id of the variable group.
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:
@@ -462,7 +462,7 @@ class TaskAgentClient(Client):
         :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task_agent.models.VariableGroupParameters>` group: Variable group to update.
         :param str project: Project ID or project name
         :param int group_id: Id of the variable group to update.
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:

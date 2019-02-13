@@ -39,7 +39,7 @@ class WorkItemTrackingClient(Client):
         """GetWorkItemIdsForArtifactUris.
         [Preview API] Gets the results of the work item ids linked to the artifact uri
         :param :class:`<ArtifactUriQuery> <azure.devops.v4_0.work_item_tracking.models.ArtifactUriQuery>` artifact_uri_query: List of artifact uris.
-        :rtype: :class:`<ArtifactUriQueryResult> <azure.devops.v4_0.work-item-tracking.models.ArtifactUriQueryResult>`
+        :rtype: :class:`<ArtifactUriQueryResult> <azure.devops.v4_0.work_item_tracking.models.ArtifactUriQueryResult>`
         """
         content = self._serialize.body(artifact_uri_query, 'ArtifactUriQuery')
         response = self._send(http_method='POST',
@@ -55,7 +55,7 @@ class WorkItemTrackingClient(Client):
         :param str file_name:
         :param str upload_type:
         :param str area_path:
-        :rtype: :class:`<AttachmentReference> <azure.devops.v4_0.work-item-tracking.models.AttachmentReference>`
+        :rtype: :class:`<AttachmentReference> <azure.devops.v4_0.work_item_tracking.models.AttachmentReference>`
         """
         query_parameters = {}
         if file_name is not None:
@@ -152,7 +152,7 @@ class WorkItemTrackingClient(Client):
         :param str project: Project ID or project name
         :param TreeStructureGroup structure_group:
         :param str path:
-        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work-item-tracking.models.WorkItemClassificationNode>`
+        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work_item_tracking.models.WorkItemClassificationNode>`
         """
         route_values = {}
         if project is not None:
@@ -198,7 +198,7 @@ class WorkItemTrackingClient(Client):
         :param TreeStructureGroup structure_group:
         :param str path:
         :param int depth:
-        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work-item-tracking.models.WorkItemClassificationNode>`
+        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work_item_tracking.models.WorkItemClassificationNode>`
         """
         route_values = {}
         if project is not None:
@@ -223,7 +223,7 @@ class WorkItemTrackingClient(Client):
         :param str project: Project ID or project name
         :param TreeStructureGroup structure_group:
         :param str path:
-        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work-item-tracking.models.WorkItemClassificationNode>`
+        :rtype: :class:`<WorkItemClassificationNode> <azure.devops.v4_0.work_item_tracking.models.WorkItemClassificationNode>`
         """
         route_values = {}
         if project is not None:
@@ -245,7 +245,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Returns comment for a work item at the specified revision
         :param int id:
         :param int revision:
-        :rtype: :class:`<WorkItemComment> <azure.devops.v4_0.work-item-tracking.models.WorkItemComment>`
+        :rtype: :class:`<WorkItemComment> <azure.devops.v4_0.work_item_tracking.models.WorkItemComment>`
         """
         route_values = {}
         if id is not None:
@@ -265,7 +265,7 @@ class WorkItemTrackingClient(Client):
         :param int from_revision: Revision from which comments are to be fetched
         :param int top: The number of comments to return
         :param str order: Ascending or descending by revision id
-        :rtype: :class:`<WorkItemComments> <azure.devops.v4_0.work-item-tracking.models.WorkItemComments>`
+        :rtype: :class:`<WorkItemComments> <azure.devops.v4_0.work_item_tracking.models.WorkItemComments>`
         """
         route_values = {}
         if id is not None:
@@ -304,7 +304,7 @@ class WorkItemTrackingClient(Client):
         Gets information on a specific field.
         :param str field_name_or_ref_name: Field simple name or reference name
         :param str project: Project ID or project name
-        :rtype: :class:`<WorkItemField> <azure.devops.v4_0.work-item-tracking.models.WorkItemField>`
+        :rtype: :class:`<WorkItemField> <azure.devops.v4_0.work_item_tracking.models.WorkItemField>`
         """
         route_values = {}
         if project is not None:
@@ -361,7 +361,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<QueryHierarchyItem> <azure.devops.v4_0.work_item_tracking.models.QueryHierarchyItem>` posted_query: The query to create.
         :param str project: Project ID or project name
         :param str query: The parent path for the query to create.
-        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work-item-tracking.models.QueryHierarchyItem>`
+        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work_item_tracking.models.QueryHierarchyItem>`
         """
         route_values = {}
         if project is not None:
@@ -425,7 +425,7 @@ class WorkItemTrackingClient(Client):
         :param str expand:
         :param int depth:
         :param bool include_deleted:
-        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work-item-tracking.models.QueryHierarchyItem>`
+        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work_item_tracking.models.QueryHierarchyItem>`
         """
         route_values = {}
         if project is not None:
@@ -454,7 +454,7 @@ class WorkItemTrackingClient(Client):
         :param int top:
         :param str expand:
         :param bool include_deleted:
-        :rtype: :class:`<QueryHierarchyItemsResult> <azure.devops.v4_0.work-item-tracking.models.QueryHierarchyItemsResult>`
+        :rtype: :class:`<QueryHierarchyItemsResult> <azure.devops.v4_0.work_item_tracking.models.QueryHierarchyItemsResult>`
         """
         route_values = {}
         if project is not None:
@@ -481,7 +481,7 @@ class WorkItemTrackingClient(Client):
         :param str project: Project ID or project name
         :param str query:
         :param bool undelete_descendants:
-        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work-item-tracking.models.QueryHierarchyItem>`
+        :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_0.work_item_tracking.models.QueryHierarchyItem>`
         """
         route_values = {}
         if project is not None:
@@ -521,7 +521,7 @@ class WorkItemTrackingClient(Client):
         [Preview API]
         :param int id:
         :param str project: Project ID or project name
-        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work-item-tracking.models.WorkItemDelete>`
+        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work_item_tracking.models.WorkItemDelete>`
         """
         route_values = {}
         if project is not None:
@@ -576,7 +576,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemDeleteUpdate> <azure.devops.v4_0.work_item_tracking.models.WorkItemDeleteUpdate>` payload:
         :param int id:
         :param str project: Project ID or project name
-        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work-item-tracking.models.WorkItemDelete>`
+        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work_item_tracking.models.WorkItemDelete>`
         """
         route_values = {}
         if project is not None:
@@ -597,7 +597,7 @@ class WorkItemTrackingClient(Client):
         :param int id:
         :param int revision_number:
         :param str expand:
-        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work-item-tracking.models.WorkItem>`
+        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work_item_tracking.models.WorkItem>`
         """
         route_values = {}
         if id is not None:
@@ -656,7 +656,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Creates a template
         :param :class:`<WorkItemTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTemplate>` template: Template contents
         :param :class:`<TeamContext> <azure.devops.v4_0.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
-        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work-item-tracking.models.WorkItemTemplate>`
+        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTemplate>`
         """
         project = None
         team = None
@@ -752,7 +752,7 @@ class WorkItemTrackingClient(Client):
         [Preview API] Gets the template with specified id
         :param :class:`<TeamContext> <azure.devops.v4_0.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str template_id: Template Id
-        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work-item-tracking.models.WorkItemTemplate>`
+        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTemplate>`
         """
         project = None
         team = None
@@ -785,7 +785,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<WorkItemTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTemplate>` template_content: Template contents to replace with
         :param :class:`<TeamContext> <azure.devops.v4_0.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str template_id: Template id
-        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work-item-tracking.models.WorkItemTemplate>`
+        :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTemplate>`
         """
         project = None
         team = None
@@ -819,7 +819,7 @@ class WorkItemTrackingClient(Client):
         Returns a single update for a work item
         :param int id:
         :param int update_number:
-        :rtype: :class:`<WorkItemUpdate> <azure.devops.v4_0.work-item-tracking.models.WorkItemUpdate>`
+        :rtype: :class:`<WorkItemUpdate> <azure.devops.v4_0.work_item_tracking.models.WorkItemUpdate>`
         """
         route_values = {}
         if id is not None:
@@ -862,7 +862,7 @@ class WorkItemTrackingClient(Client):
         :param :class:`<TeamContext> <azure.devops.v4_0.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param bool time_precision:
         :param int top:
-        :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_0.work-item-tracking.models.WorkItemQueryResult>`
+        :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_0.work_item_tracking.models.WorkItemQueryResult>`
         """
         project = None
         team = None
@@ -938,7 +938,7 @@ class WorkItemTrackingClient(Client):
         :param str id: The query id.
         :param :class:`<TeamContext> <azure.devops.v4_0.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param bool time_precision:
-        :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_0.work-item-tracking.models.WorkItemQueryResult>`
+        :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_0.work_item_tracking.models.WorkItemQueryResult>`
         """
         project = None
         team = None
@@ -975,7 +975,7 @@ class WorkItemTrackingClient(Client):
         :param str icon:
         :param str color:
         :param int v:
-        :rtype: :class:`<WorkItemIcon> <azure.devops.v4_0.work-item-tracking.models.WorkItemIcon>`
+        :rtype: :class:`<WorkItemIcon> <azure.devops.v4_0.work_item_tracking.models.WorkItemIcon>`
         """
         route_values = {}
         if icon is not None:
@@ -1037,7 +1037,7 @@ class WorkItemTrackingClient(Client):
         :param [str] types: A list of types to filter the results to specific work item types. Omit this parameter to get work item links of all work item types.
         :param str continuation_token: Specifies the continuationToken to start the batch from. Omit this parameter to get the first batch of links.
         :param datetime start_date_time: Date/time to use as a starting point for link changes. Only link changes that occurred after that date/time will be returned. Cannot be used in conjunction with 'watermark' parameter.
-        :rtype: :class:`<ReportingWorkItemLinksBatch> <azure.devops.v4_0.work-item-tracking.models.ReportingWorkItemLinksBatch>`
+        :rtype: :class:`<ReportingWorkItemLinksBatch> <azure.devops.v4_0.work_item_tracking.models.ReportingWorkItemLinksBatch>`
         """
         route_values = {}
         if project is not None:
@@ -1061,7 +1061,7 @@ class WorkItemTrackingClient(Client):
         """GetRelationType.
         Gets the work item relation types.
         :param str relation:
-        :rtype: :class:`<WorkItemRelationType> <azure.devops.v4_0.work-item-tracking.models.WorkItemRelationType>`
+        :rtype: :class:`<WorkItemRelationType> <azure.devops.v4_0.work_item_tracking.models.WorkItemRelationType>`
         """
         route_values = {}
         if relation is not None:
@@ -1096,7 +1096,7 @@ class WorkItemTrackingClient(Client):
         :param bool include_latest_only: Return only the latest revisions of work items, skipping all historical revisions
         :param str expand: Return all the fields in work item revisions, including long text fields which are not returned by default
         :param bool include_discussion_changes_only: Return only the those revisions of work items, where only history field was changed
-        :rtype: :class:`<ReportingWorkItemRevisionsBatch> <azure.devops.v4_0.work-item-tracking.models.ReportingWorkItemRevisionsBatch>`
+        :rtype: :class:`<ReportingWorkItemRevisionsBatch> <azure.devops.v4_0.work_item_tracking.models.ReportingWorkItemRevisionsBatch>`
         """
         route_values = {}
         if project is not None:
@@ -1139,7 +1139,7 @@ class WorkItemTrackingClient(Client):
         :param str continuation_token: Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
         :param datetime start_date_time: Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with 'watermark' parameter.
         :param str expand:
-        :rtype: :class:`<ReportingWorkItemRevisionsBatch> <azure.devops.v4_0.work-item-tracking.models.ReportingWorkItemRevisionsBatch>`
+        :rtype: :class:`<ReportingWorkItemRevisionsBatch> <azure.devops.v4_0.work_item_tracking.models.ReportingWorkItemRevisionsBatch>`
         """
         route_values = {}
         if project is not None:
@@ -1164,7 +1164,7 @@ class WorkItemTrackingClient(Client):
         """DeleteWorkItem.
         :param int id:
         :param bool destroy:
-        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work-item-tracking.models.WorkItemDelete>`
+        :rtype: :class:`<WorkItemDelete> <azure.devops.v4_0.work_item_tracking.models.WorkItemDelete>`
         """
         route_values = {}
         if id is not None:
@@ -1186,7 +1186,7 @@ class WorkItemTrackingClient(Client):
         :param [str] fields:
         :param datetime as_of:
         :param str expand:
-        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work-item-tracking.models.WorkItem>`
+        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work_item_tracking.models.WorkItem>`
         """
         route_values = {}
         if id is not None:
@@ -1243,7 +1243,7 @@ class WorkItemTrackingClient(Client):
         :param bool validate_only: Indicate if you only want to validate the changes without saving the work item
         :param bool bypass_rules: Do not enforce the work item type rules on this update
         :param bool suppress_notifications: Do not fire any notifications for this change
-        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work-item-tracking.models.WorkItem>`
+        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work_item_tracking.models.WorkItem>`
         """
         route_values = {}
         if id is not None:
@@ -1274,7 +1274,7 @@ class WorkItemTrackingClient(Client):
         :param bool validate_only: Indicate if you only want to validate the changes without saving the work item
         :param bool bypass_rules: Do not enforce the work item type rules on this update
         :param bool suppress_notifications: Do not fire any notifications for this change
-        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work-item-tracking.models.WorkItem>`
+        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work_item_tracking.models.WorkItem>`
         """
         route_values = {}
         if project is not None:
@@ -1306,7 +1306,7 @@ class WorkItemTrackingClient(Client):
         :param str fields:
         :param datetime as_of:
         :param str expand:
-        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work-item-tracking.models.WorkItem>`
+        :rtype: :class:`<WorkItem> <azure.devops.v4_0.work_item_tracking.models.WorkItem>`
         """
         route_values = {}
         if project is not None:
@@ -1347,7 +1347,7 @@ class WorkItemTrackingClient(Client):
         Returns a the deltas between work item revisions
         :param str project: Project ID or project name
         :param str category:
-        :rtype: :class:`<WorkItemTypeCategory> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeCategory>`
+        :rtype: :class:`<WorkItemTypeCategory> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeCategory>`
         """
         route_values = {}
         if project is not None:
@@ -1365,7 +1365,7 @@ class WorkItemTrackingClient(Client):
         Returns a the deltas between work item revisions
         :param str project: Project ID or project name
         :param str type:
-        :rtype: :class:`<WorkItemType> <azure.devops.v4_0.work-item-tracking.models.WorkItemType>`
+        :rtype: :class:`<WorkItemType> <azure.devops.v4_0.work_item_tracking.models.WorkItemType>`
         """
         route_values = {}
         if project is not None:
@@ -1399,7 +1399,7 @@ class WorkItemTrackingClient(Client):
         :param str project: Project ID or project name
         :param str type:
         :param str field:
-        :rtype: :class:`<FieldDependentRule> <azure.devops.v4_0.work-item-tracking.models.FieldDependentRule>`
+        :rtype: :class:`<FieldDependentRule> <azure.devops.v4_0.work_item_tracking.models.FieldDependentRule>`
         """
         route_values = {}
         if project is not None:
@@ -1438,7 +1438,7 @@ class WorkItemTrackingClient(Client):
         :param str project: Project ID or project name
         :param str type:
         :param bool export_global_lists:
-        :rtype: :class:`<WorkItemTypeTemplate> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeTemplate>`
+        :rtype: :class:`<WorkItemTypeTemplate> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeTemplate>`
         """
         route_values = {}
         if project is not None:
@@ -1460,7 +1460,7 @@ class WorkItemTrackingClient(Client):
         Add/updates a work item type
         :param :class:`<WorkItemTypeTemplateUpdateModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeTemplateUpdateModel>` update_model:
         :param str project: Project ID or project name
-        :rtype: :class:`<ProvisioningResult> <azure.devops.v4_0.work-item-tracking.models.ProvisioningResult>`
+        :rtype: :class:`<ProvisioningResult> <azure.devops.v4_0.work_item_tracking.models.ProvisioningResult>`
         """
         route_values = {}
         if project is not None:

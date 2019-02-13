@@ -44,7 +44,7 @@ class FeatureAvailabilityClient(Client):
         """GetFeatureFlagByName.
         [Preview API] Retrieve information on a single feature flag and its current states
         :param str name: The name of the feature to retrieve
-        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature-availability.models.FeatureFlag>`
+        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature_availability.models.FeatureFlag>`
         """
         route_values = {}
         if name is not None:
@@ -60,7 +60,7 @@ class FeatureAvailabilityClient(Client):
         [Preview API] Retrieve information on a single feature flag and its current states for a user
         :param str name: The name of the feature to retrieve
         :param str user_email: The email of the user to check
-        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature-availability.models.FeatureFlag>`
+        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature_availability.models.FeatureFlag>`
         """
         route_values = {}
         if name is not None:
@@ -80,7 +80,7 @@ class FeatureAvailabilityClient(Client):
         [Preview API] Retrieve information on a single feature flag and its current states for a user
         :param str name: The name of the feature to retrieve
         :param str user_id: The id of the user to check
-        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature-availability.models.FeatureFlag>`
+        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature_availability.models.FeatureFlag>`
         """
         route_values = {}
         if name is not None:
@@ -103,7 +103,7 @@ class FeatureAvailabilityClient(Client):
         :param str user_email:
         :param bool check_feature_exists: Checks if the feature exists before setting the state
         :param bool set_at_application_level_also:
-        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature-availability.models.FeatureFlag>`
+        :rtype: :class:`<FeatureFlag> <azure.devops.v4_1.feature_availability.models.FeatureFlag>`
         """
         route_values = {}
         if name is not None:

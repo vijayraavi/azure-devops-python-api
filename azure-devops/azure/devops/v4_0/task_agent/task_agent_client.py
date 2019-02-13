@@ -29,7 +29,7 @@ class TaskAgentClient(Client):
         """AddAgent.
         :param :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>` agent:
         :param int pool_id:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -64,7 +64,7 @@ class TaskAgentClient(Client):
         :param bool include_capabilities:
         :param bool include_assigned_request:
         :param [str] property_filters:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -124,7 +124,7 @@ class TaskAgentClient(Client):
         :param :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>` agent:
         :param int pool_id:
         :param int agent_id:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -144,7 +144,7 @@ class TaskAgentClient(Client):
         :param :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>` agent:
         :param int pool_id:
         :param int agent_id:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -162,7 +162,7 @@ class TaskAgentClient(Client):
     def get_azure_subscriptions(self):
         """GetAzureSubscriptions.
         [Preview API] Returns list of azure subscriptions
-        :rtype: :class:`<AzureSubscriptionQueryResult> <azure.devops.v4_0.task-agent.models.AzureSubscriptionQueryResult>`
+        :rtype: :class:`<AzureSubscriptionQueryResult> <azure.devops.v4_0.task_agent.models.AzureSubscriptionQueryResult>`
         """
         response = self._send(http_method='GET',
                               location_id='bcd6189c-0303-471f-a8e1-acb22b74d700',
@@ -192,7 +192,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<DeploymentGroup> <azure.devops.v4_0.task_agent.models.DeploymentGroup>` deployment_group:
         :param str project: Project ID or project name
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -228,7 +228,7 @@ class TaskAgentClient(Client):
         :param int deployment_group_id:
         :param str action_filter:
         :param str expand:
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -289,7 +289,7 @@ class TaskAgentClient(Client):
         :param :class:`<DeploymentGroup> <azure.devops.v4_0.task_agent.models.DeploymentGroup>` deployment_group:
         :param str project: Project ID or project name
         :param int deployment_group_id:
-        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task-agent.models.DeploymentGroup>`
+        :rtype: :class:`<DeploymentGroup> <azure.devops.v4_0.task_agent.models.DeploymentGroup>`
         """
         route_values = {}
         if project is not None:
@@ -459,7 +459,7 @@ class TaskAgentClient(Client):
         :param str hub_name:
         :param bool include_enterprise_users_count:
         :param bool include_hosted_agent_minutes_count:
-        :rtype: :class:`<TaskHubLicenseDetails> <azure.devops.v4_0.task-agent.models.TaskHubLicenseDetails>`
+        :rtype: :class:`<TaskHubLicenseDetails> <azure.devops.v4_0.task_agent.models.TaskHubLicenseDetails>`
         """
         route_values = {}
         if hub_name is not None:
@@ -481,7 +481,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<TaskHubLicenseDetails> <azure.devops.v4_0.task_agent.models.TaskHubLicenseDetails>` task_hub_license_details:
         :param str hub_name:
-        :rtype: :class:`<TaskHubLicenseDetails> <azure.devops.v4_0.task-agent.models.TaskHubLicenseDetails>`
+        :rtype: :class:`<TaskHubLicenseDetails> <azure.devops.v4_0.task_agent.models.TaskHubLicenseDetails>`
         """
         route_values = {}
         if hub_name is not None:
@@ -498,7 +498,7 @@ class TaskAgentClient(Client):
         """ValidateInputs.
         [Preview API]
         :param :class:`<InputValidationRequest> <azure.devops.v4_0.task_agent.models.InputValidationRequest>` input_validation_request:
-        :rtype: :class:`<InputValidationRequest> <azure.devops.v4_0.task-agent.models.InputValidationRequest>`
+        :rtype: :class:`<InputValidationRequest> <azure.devops.v4_0.task_agent.models.InputValidationRequest>`
         """
         content = self._serialize.body(input_validation_request, 'InputValidationRequest')
         response = self._send(http_method='POST',
@@ -534,7 +534,7 @@ class TaskAgentClient(Client):
         """GetAgentRequest.
         :param int pool_id:
         :param long request_id:
-        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task-agent.models.TaskAgentJobRequest>`
+        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task_agent.models.TaskAgentJobRequest>`
         """
         route_values = {}
         if pool_id is not None:
@@ -618,7 +618,7 @@ class TaskAgentClient(Client):
         """QueueAgentRequest.
         :param :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task_agent.models.TaskAgentJobRequest>` request:
         :param int pool_id:
-        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task-agent.models.TaskAgentJobRequest>`
+        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task_agent.models.TaskAgentJobRequest>`
         """
         route_values = {}
         if pool_id is not None:
@@ -637,7 +637,7 @@ class TaskAgentClient(Client):
         :param int pool_id:
         :param long request_id:
         :param str lock_token:
-        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task-agent.models.TaskAgentJobRequest>`
+        :rtype: :class:`<TaskAgentJobRequest> <azure.devops.v4_0.task_agent.models.TaskAgentJobRequest>`
         """
         route_values = {}
         if pool_id is not None:
@@ -679,7 +679,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task_agent.models.DeploymentMachineGroup>` machine_group:
         :param str project: Project ID or project name
-        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task-agent.models.DeploymentMachineGroup>`
+        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task_agent.models.DeploymentMachineGroup>`
         """
         route_values = {}
         if project is not None:
@@ -714,7 +714,7 @@ class TaskAgentClient(Client):
         :param str project: Project ID or project name
         :param int machine_group_id:
         :param str action_filter:
-        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task-agent.models.DeploymentMachineGroup>`
+        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task_agent.models.DeploymentMachineGroup>`
         """
         route_values = {}
         if project is not None:
@@ -760,7 +760,7 @@ class TaskAgentClient(Client):
         :param :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task_agent.models.DeploymentMachineGroup>` machine_group:
         :param str project: Project ID or project name
         :param int machine_group_id:
-        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task-agent.models.DeploymentMachineGroup>`
+        :rtype: :class:`<DeploymentMachineGroup> <azure.devops.v4_0.task_agent.models.DeploymentMachineGroup>`
         """
         route_values = {}
         if project is not None:
@@ -826,7 +826,7 @@ class TaskAgentClient(Client):
         :param :class:`<DeploymentMachine> <azure.devops.v4_0.task_agent.models.DeploymentMachine>` machine:
         :param str project: Project ID or project name
         :param int deployment_group_id:
-        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task-agent.models.DeploymentMachine>`
+        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task_agent.models.DeploymentMachine>`
         """
         route_values = {}
         if project is not None:
@@ -867,7 +867,7 @@ class TaskAgentClient(Client):
         :param int deployment_group_id:
         :param int machine_id:
         :param str expand:
-        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task-agent.models.DeploymentMachine>`
+        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task_agent.models.DeploymentMachine>`
         """
         route_values = {}
         if project is not None:
@@ -923,7 +923,7 @@ class TaskAgentClient(Client):
         :param str project: Project ID or project name
         :param int deployment_group_id:
         :param int machine_id:
-        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task-agent.models.DeploymentMachine>`
+        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task_agent.models.DeploymentMachine>`
         """
         route_values = {}
         if project is not None:
@@ -947,7 +947,7 @@ class TaskAgentClient(Client):
         :param str project: Project ID or project name
         :param int deployment_group_id:
         :param int machine_id:
-        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task-agent.models.DeploymentMachine>`
+        :rtype: :class:`<DeploymentMachine> <azure.devops.v4_0.task_agent.models.DeploymentMachine>`
         """
         route_values = {}
         if project is not None:
@@ -990,7 +990,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceDefinition>` definition:
         :param int pool_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceDefinition>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceDefinition>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1024,7 +1024,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param int pool_id:
         :param int definition_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceDefinition>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceDefinition>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1058,7 +1058,7 @@ class TaskAgentClient(Client):
         :param :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceDefinition>` definition:
         :param int pool_id:
         :param int definition_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceDefinition>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceDefinition> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceDefinition>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1094,7 +1094,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param int pool_id:
         :param int job_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceJob>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceJob>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1155,7 +1155,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceJob>` job:
         :param int pool_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceJob>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceJob>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1174,7 +1174,7 @@ class TaskAgentClient(Client):
         :param :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceJob>` job:
         :param int pool_id:
         :param int job_id:
-        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task-agent.models.TaskAgentPoolMaintenanceJob>`
+        :rtype: :class:`<TaskAgentPoolMaintenanceJob> <azure.devops.v4_0.task_agent.models.TaskAgentPoolMaintenanceJob>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1214,7 +1214,7 @@ class TaskAgentClient(Client):
         :param int pool_id:
         :param str session_id:
         :param long last_message_id:
-        :rtype: :class:`<TaskAgentMessage> <azure.devops.v4_0.task-agent.models.TaskAgentMessage>`
+        :rtype: :class:`<TaskAgentMessage> <azure.devops.v4_0.task_agent.models.TaskAgentMessage>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1285,7 +1285,7 @@ class TaskAgentClient(Client):
         :param str package_type:
         :param str platform:
         :param str version:
-        :rtype: :class:`<PackageMetadata> <azure.devops.v4_0.task-agent.models.PackageMetadata>`
+        :rtype: :class:`<PackageMetadata> <azure.devops.v4_0.task_agent.models.PackageMetadata>`
         """
         route_values = {}
         if package_type is not None:
@@ -1340,7 +1340,7 @@ class TaskAgentClient(Client):
     def add_agent_pool(self, pool):
         """AddAgentPool.
         :param :class:`<TaskAgentPool> <azure.devops.v4_0.task_agent.models.TaskAgentPool>` pool:
-        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task-agent.models.TaskAgentPool>`
+        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task_agent.models.TaskAgentPool>`
         """
         content = self._serialize.body(pool, 'TaskAgentPool')
         response = self._send(http_method='POST',
@@ -1366,7 +1366,7 @@ class TaskAgentClient(Client):
         :param int pool_id:
         :param [str] properties:
         :param str action_filter:
-        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task-agent.models.TaskAgentPool>`
+        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task_agent.models.TaskAgentPool>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1412,7 +1412,7 @@ class TaskAgentClient(Client):
         """UpdateAgentPool.
         :param :class:`<TaskAgentPool> <azure.devops.v4_0.task_agent.models.TaskAgentPool>` pool:
         :param int pool_id:
-        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task-agent.models.TaskAgentPool>`
+        :rtype: :class:`<TaskAgentPool> <azure.devops.v4_0.task_agent.models.TaskAgentPool>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1445,7 +1445,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<TaskAgentQueue> <azure.devops.v4_0.task_agent.models.TaskAgentQueue>` queue:
         :param str project: Project ID or project name
-        :rtype: :class:`<TaskAgentQueue> <azure.devops.v4_0.task-agent.models.TaskAgentQueue>`
+        :rtype: :class:`<TaskAgentQueue> <azure.devops.v4_0.task_agent.models.TaskAgentQueue>`
         """
         route_values = {}
         if project is not None:
@@ -1493,7 +1493,7 @@ class TaskAgentClient(Client):
         :param int queue_id:
         :param str project: Project ID or project name
         :param str action_filter:
-        :rtype: :class:`<TaskAgentQueue> <azure.devops.v4_0.task-agent.models.TaskAgentQueue>`
+        :rtype: :class:`<TaskAgentQueue> <azure.devops.v4_0.task_agent.models.TaskAgentQueue>`
         """
         route_values = {}
         if project is not None:
@@ -1604,7 +1604,7 @@ class TaskAgentClient(Client):
         :param str project: Project ID or project name
         :param str secure_file_id: The unique secure file Id
         :param bool include_download_ticket: If includeDownloadTicket is true and the caller has permissions, a download ticket is included in the response.
-        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task-agent.models.SecureFile>`
+        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task_agent.models.SecureFile>`
         """
         route_values = {}
         if project is not None:
@@ -1700,7 +1700,7 @@ class TaskAgentClient(Client):
         :param :class:`<SecureFile> <azure.devops.v4_0.task_agent.models.SecureFile>` secure_file: The secure file with updated name and/or properties
         :param str project: Project ID or project name
         :param str secure_file_id: The unique secure file Id
-        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task-agent.models.SecureFile>`
+        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task_agent.models.SecureFile>`
         """
         route_values = {}
         if project is not None:
@@ -1739,7 +1739,7 @@ class TaskAgentClient(Client):
         :param object upload_stream: Stream to upload
         :param str project: Project ID or project name
         :param str name: Name of the file to upload
-        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task-agent.models.SecureFile>`
+        :rtype: :class:`<SecureFile> <azure.devops.v4_0.task_agent.models.SecureFile>`
         """
         route_values = {}
         if project is not None:
@@ -1767,7 +1767,7 @@ class TaskAgentClient(Client):
         :param :class:`<ServiceEndpointRequest> <azure.devops.v4_0.task_agent.models.ServiceEndpointRequest>` service_endpoint_request:
         :param str project: Project ID or project name
         :param str endpoint_id:
-        :rtype: :class:`<ServiceEndpointRequestResult> <azure.devops.v4_0.task-agent.models.ServiceEndpointRequestResult>`
+        :rtype: :class:`<ServiceEndpointRequestResult> <azure.devops.v4_0.task_agent.models.ServiceEndpointRequestResult>`
         """
         route_values = {}
         if project is not None:
@@ -1789,7 +1789,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<ServiceEndpoint> <azure.devops.v4_0.task_agent.models.ServiceEndpoint>` endpoint:
         :param str project: Project ID or project name
-        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task-agent.models.ServiceEndpoint>`
+        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task_agent.models.ServiceEndpoint>`
         """
         route_values = {}
         if project is not None:
@@ -1823,7 +1823,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param str project: Project ID or project name
         :param str endpoint_id:
-        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task-agent.models.ServiceEndpoint>`
+        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task_agent.models.ServiceEndpoint>`
         """
         route_values = {}
         if project is not None:
@@ -1874,7 +1874,7 @@ class TaskAgentClient(Client):
         :param str project: Project ID or project name
         :param str endpoint_id:
         :param str operation:
-        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task-agent.models.ServiceEndpoint>`
+        :rtype: :class:`<ServiceEndpoint> <azure.devops.v4_0.task_agent.models.ServiceEndpoint>`
         """
         route_values = {}
         if project is not None:
@@ -1933,7 +1933,7 @@ class TaskAgentClient(Client):
         """CreateAgentSession.
         :param :class:`<TaskAgentSession> <azure.devops.v4_0.task_agent.models.TaskAgentSession>` session:
         :param int pool_id:
-        :rtype: :class:`<TaskAgentSession> <azure.devops.v4_0.task-agent.models.TaskAgentSession>`
+        :rtype: :class:`<TaskAgentSession> <azure.devops.v4_0.task_agent.models.TaskAgentSession>`
         """
         route_values = {}
         if pool_id is not None:
@@ -1966,7 +1966,7 @@ class TaskAgentClient(Client):
         [Preview API] Create a task group.
         :param :class:`<TaskGroup> <azure.devops.v4_0.task_agent.models.TaskGroup>` task_group: Task group object to create.
         :param str project: Project ID or project name
-        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task-agent.models.TaskGroup>`
+        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task_agent.models.TaskGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2007,7 +2007,7 @@ class TaskAgentClient(Client):
         :param str task_group_id:
         :param str version_spec:
         :param bool expanded:
-        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task-agent.models.TaskGroup>`
+        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task_agent.models.TaskGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2155,7 +2155,7 @@ class TaskAgentClient(Client):
         [Preview API] Update a task group.
         :param :class:`<TaskGroup> <azure.devops.v4_0.task_agent.models.TaskGroup>` task_group: Task group to update.
         :param str project: Project ID or project name
-        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task-agent.models.TaskGroup>`
+        :rtype: :class:`<TaskGroup> <azure.devops.v4_0.task_agent.models.TaskGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2216,7 +2216,7 @@ class TaskAgentClient(Client):
         :param str version_string:
         :param [str] visibility:
         :param bool scope_local:
-        :rtype: :class:`<TaskDefinition> <azure.devops.v4_0.task-agent.models.TaskDefinition>`
+        :rtype: :class:`<TaskDefinition> <azure.devops.v4_0.task_agent.models.TaskDefinition>`
         """
         route_values = {}
         if task_id is not None:
@@ -2263,7 +2263,7 @@ class TaskAgentClient(Client):
         :param int pool_id:
         :param int agent_id:
         :param str current_state:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -2285,7 +2285,7 @@ class TaskAgentClient(Client):
         :param {str} user_capabilities:
         :param int pool_id:
         :param int agent_id:
-        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task-agent.models.TaskAgent>`
+        :rtype: :class:`<TaskAgent> <azure.devops.v4_0.task_agent.models.TaskAgent>`
         """
         route_values = {}
         if pool_id is not None:
@@ -2305,7 +2305,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param :class:`<VariableGroup> <azure.devops.v4_0.task_agent.models.VariableGroup>` group:
         :param str project: Project ID or project name
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2339,7 +2339,7 @@ class TaskAgentClient(Client):
         [Preview API]
         :param str project: Project ID or project name
         :param int group_id:
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2402,7 +2402,7 @@ class TaskAgentClient(Client):
         :param :class:`<VariableGroup> <azure.devops.v4_0.task_agent.models.VariableGroup>` group:
         :param str project: Project ID or project name
         :param int group_id:
-        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task-agent.models.VariableGroup>`
+        :rtype: :class:`<VariableGroup> <azure.devops.v4_0.task_agent.models.VariableGroup>`
         """
         route_values = {}
         if project is not None:
@@ -2421,7 +2421,7 @@ class TaskAgentClient(Client):
         """AcquireAccessToken.
         [Preview API]
         :param :class:`<AadOauthTokenRequest> <azure.devops.v4_0.task_agent.models.AadOauthTokenRequest>` authentication_request:
-        :rtype: :class:`<AadOauthTokenResult> <azure.devops.v4_0.task-agent.models.AadOauthTokenResult>`
+        :rtype: :class:`<AadOauthTokenResult> <azure.devops.v4_0.task_agent.models.AadOauthTokenResult>`
         """
         content = self._serialize.body(authentication_request, 'AadOauthTokenRequest')
         response = self._send(http_method='POST',
