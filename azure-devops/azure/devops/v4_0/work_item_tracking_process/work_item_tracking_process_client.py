@@ -104,7 +104,7 @@ class WorkItemTrackingClient(Client):
     def create_process(self, create_request):
         """CreateProcess.
         [Preview API]
-        :param :class:`<CreateProcessModel> <azure.devops.v4_0.work-item-tracking.models.CreateProcessModel>` create_request:
+        :param :class:`<CreateProcessModel> <azure.devops.v4_0.work_item_tracking.models.CreateProcessModel>` create_request:
         :rtype: :class:`<ProcessModel> <azure.devops.v4_0.work-item-tracking.models.ProcessModel>`
         """
         content = self._serialize.body(create_request, 'CreateProcessModel')
@@ -165,7 +165,7 @@ class WorkItemTrackingClient(Client):
     def update_process(self, update_request, process_type_id):
         """UpdateProcess.
         [Preview API]
-        :param :class:`<UpdateProcessModel> <azure.devops.v4_0.work-item-tracking.models.UpdateProcessModel>` update_request:
+        :param :class:`<UpdateProcessModel> <azure.devops.v4_0.work_item_tracking.models.UpdateProcessModel>` update_request:
         :param str process_type_id:
         :rtype: :class:`<ProcessModel> <azure.devops.v4_0.work-item-tracking.models.ProcessModel>`
         """
@@ -183,7 +183,7 @@ class WorkItemTrackingClient(Client):
     def add_work_item_type_rule(self, field_rule, process_id, wit_ref_name):
         """AddWorkItemTypeRule.
         [Preview API]
-        :param :class:`<FieldRuleModel> <azure.devops.v4_0.work-item-tracking.models.FieldRuleModel>` field_rule:
+        :param :class:`<FieldRuleModel> <azure.devops.v4_0.work_item_tracking.models.FieldRuleModel>` field_rule:
         :param str process_id:
         :param str wit_ref_name:
         :rtype: :class:`<FieldRuleModel> <azure.devops.v4_0.work-item-tracking.models.FieldRuleModel>`
@@ -262,7 +262,7 @@ class WorkItemTrackingClient(Client):
     def update_work_item_type_rule(self, field_rule, process_id, wit_ref_name, rule_id):
         """UpdateWorkItemTypeRule.
         [Preview API]
-        :param :class:`<FieldRuleModel> <azure.devops.v4_0.work-item-tracking.models.FieldRuleModel>` field_rule:
+        :param :class:`<FieldRuleModel> <azure.devops.v4_0.work_item_tracking.models.FieldRuleModel>` field_rule:
         :param str process_id:
         :param str wit_ref_name:
         :param str rule_id:

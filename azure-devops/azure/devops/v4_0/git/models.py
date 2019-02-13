@@ -1332,6 +1332,22 @@ class GitPullRequest(Model):
         self.work_item_refs = work_item_refs
 
 
+class GitPullRequestChange(Model):
+    """GitPullRequestChange.
+
+    :param change_tracking_id: Id used to track files through multiple changes
+    :type change_tracking_id: int
+    """
+
+    _attribute_map = {
+        'change_tracking_id': {'key': 'changeTrackingId', 'type': 'int'}
+    }
+
+    def __init__(self, change_tracking_id=None):
+        super(GitPullRequestChange, self).__init__()
+        self.change_tracking_id = change_tracking_id
+
+
 class GitPullRequestCommentThread(CommentThread):
     """GitPullRequestCommentThread.
 
@@ -3202,6 +3218,7 @@ __all__ = [
     'GitMergeOriginRef',
     'GitObject',
     'GitPullRequest',
+    'GitPullRequestChange',
     'GitPullRequestCommentThread',
     'GitPullRequestCommentThreadContext',
     'GitPullRequestCompletionOptions',

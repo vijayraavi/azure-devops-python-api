@@ -939,11 +939,11 @@ class InputDescriptor(Model):
     :param use_in_default_description: Gets whether this input is included in the default generated action description.
     :type use_in_default_description: bool
     :param validation: Information to use to validate this input's value
-    :type validation: :class:`InputValidation <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValidation>`
+    :type validation: :class:`InputValidation <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValidation>`
     :param value_hint: A hint for input value. It can be used in the UI as the input placeholder.
     :type value_hint: str
     :param values: Information about possible values for this input
-    :type values: :class:`InputValues <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValues>`
+    :type values: :class:`InputValues <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValues>`
     """
 
     _attribute_map = {
@@ -1055,7 +1055,7 @@ class InputValues(Model):
     :param default_value: The default value to use for this input
     :type default_value: str
     :param error: Errors encountered while computing dynamic values.
-    :type error: :class:`InputValuesError <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValuesError>`
+    :type error: :class:`InputValuesError <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValuesError>`
     :param input_id: The id of the input
     :type input_id: str
     :param is_disabled: Should this input be disabled
@@ -1065,7 +1065,7 @@ class InputValues(Model):
     :param is_read_only: Should this input be made read-only
     :type is_read_only: bool
     :param possible_values: Possible values that this input can take
-    :type possible_values: list of :class:`InputValue <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValue>`
+    :type possible_values: list of :class:`InputValue <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValue>`
     """
 
     _attribute_map = {
@@ -1111,7 +1111,7 @@ class InputValuesQuery(Model):
     :param current_values:
     :type current_values: dict
     :param input_values: The input values to return on input, and the result from the consumer on output.
-    :type input_values: list of :class:`InputValues <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValues>`
+    :type input_values: list of :class:`InputValues <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValues>`
     :param resource: Subscription containing information about the publisher/consumer and the current input values
     :type resource: object
     """
@@ -1309,11 +1309,11 @@ class ProcessParameters(Model):
     """ProcessParameters.
 
     :param data_source_bindings:
-    :type data_source_bindings: list of :class:`DataSourceBindingBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.DataSourceBindingBase>`
+    :type data_source_bindings: list of :class:`DataSourceBindingBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.DataSourceBindingBase>`
     :param inputs:
-    :type inputs: list of :class:`TaskInputDefinitionBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskInputDefinitionBase>`
+    :type inputs: list of :class:`TaskInputDefinitionBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskInputDefinitionBase>`
     :param source_definitions:
-    :type source_definitions: list of :class:`TaskSourceDefinitionBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskSourceDefinitionBase>`
+    :type source_definitions: list of :class:`TaskSourceDefinitionBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskSourceDefinitionBase>`
     """
 
     _attribute_map = {
@@ -2716,7 +2716,7 @@ class TaskInputDefinitionBase(Model):
     :param type:
     :type type: str
     :param validation:
-    :type validation: :class:`TaskInputValidation <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskInputValidation>`
+    :type validation: :class:`TaskInputValidation <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskInputValidation>`
     :param visible_rule:
     :type visible_rule: str
     """

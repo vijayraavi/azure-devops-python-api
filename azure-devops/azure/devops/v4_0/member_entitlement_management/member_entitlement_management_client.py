@@ -28,7 +28,7 @@ class MemberEntitlementManagementClient(Client):
     def add_group_entitlement(self, group_entitlement, rule_option=None):
         """AddGroupEntitlement.
         [Preview API] Used to add members to a project in an account. It adds them to groups, assigns licenses, and assigns extensions.
-        :param :class:`<GroupEntitlement> <azure.devops.v4_0.member-entitlement-management.models.GroupEntitlement>` group_entitlement: Member model for where to add the member and what licenses and extensions they should receive.
+        :param :class:`<GroupEntitlement> <azure.devops.v4_0.member_entitlement_management.models.GroupEntitlement>` group_entitlement: Member model for where to add the member and what licenses and extensions they should receive.
         :param str rule_option:
         :rtype: :class:`<GroupEntitlementOperationReference> <azure.devops.v4_0.member-entitlement-management.models.GroupEntitlementOperationReference>`
         """
@@ -91,7 +91,7 @@ class MemberEntitlementManagementClient(Client):
     def update_group_entitlement(self, document, group_id, rule_option=None):
         """UpdateGroupEntitlement.
         [Preview API] Used to edit a member in an account. Edits groups, licenses, and extensions.
-        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member-entitlement-management.models.[JsonPatchOperation]>` document: document of operations to be used
+        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member_entitlement_management.models.[JsonPatchOperation]>` document: document of operations to be used
         :param str group_id: member Id of the member to be edit
         :param str rule_option:
         :rtype: :class:`<GroupEntitlementOperationReference> <azure.devops.v4_0.member-entitlement-management.models.GroupEntitlementOperationReference>`
@@ -115,7 +115,7 @@ class MemberEntitlementManagementClient(Client):
     def add_member_entitlement(self, member_entitlement):
         """AddMemberEntitlement.
         [Preview API] Used to add members to a project in an account. It adds them to project groups, assigns licenses, and assigns extensions.
-        :param :class:`<MemberEntitlement> <azure.devops.v4_0.member-entitlement-management.models.MemberEntitlement>` member_entitlement: Member model for where to add the member and what licenses and extensions they should receive.
+        :param :class:`<MemberEntitlement> <azure.devops.v4_0.member_entitlement_management.models.MemberEntitlement>` member_entitlement: Member model for where to add the member and what licenses and extensions they should receive.
         :rtype: :class:`<MemberEntitlementsPostResponse> <azure.devops.v4_0.member-entitlement-management.models.MemberEntitlementsPostResponse>`
         """
         content = self._serialize.body(member_entitlement, 'MemberEntitlement')
@@ -180,7 +180,7 @@ class MemberEntitlementManagementClient(Client):
     def update_member_entitlement(self, document, member_id):
         """UpdateMemberEntitlement.
         [Preview API] Used to edit a member in an account. Edits groups, licenses, and extensions.
-        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member-entitlement-management.models.[JsonPatchOperation]>` document: document of operations to be used
+        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member_entitlement_management.models.[JsonPatchOperation]>` document: document of operations to be used
         :param str member_id: member Id of the member to be edit
         :rtype: :class:`<MemberEntitlementsPatchResponse> <azure.devops.v4_0.member-entitlement-management.models.MemberEntitlementsPatchResponse>`
         """
@@ -199,7 +199,7 @@ class MemberEntitlementManagementClient(Client):
     def update_member_entitlements(self, document):
         """UpdateMemberEntitlements.
         [Preview API] Used to edit multiple members in an account. Edits groups, licenses, and extensions.
-        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member-entitlement-management.models.[JsonPatchOperation]>` document: JsonPatch document
+        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_0.member_entitlement_management.models.[JsonPatchOperation]>` document: JsonPatch document
         :rtype: :class:`<MemberEntitlementOperationReference> <azure.devops.v4_0.member-entitlement-management.models.MemberEntitlementOperationReference>`
         """
         content = self._serialize.body(document, '[JsonPatchOperation]')

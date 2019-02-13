@@ -38,7 +38,7 @@ class WorkItemTrackingClient(Client):
     def query_work_items_for_artifact_uris(self, artifact_uri_query, project=None):
         """QueryWorkItemsForArtifactUris.
         [Preview API] Queries work items linked to a given list of artifact URI.
-        :param :class:`<ArtifactUriQuery> <azure.devops.v4_1.work-item-tracking.models.ArtifactUriQuery>` artifact_uri_query: Defines a list of artifact URI for querying work items.
+        :param :class:`<ArtifactUriQuery> <azure.devops.v4_1.work_item_tracking.models.ArtifactUriQuery>` artifact_uri_query: Defines a list of artifact URI for querying work items.
         :param str project: Project ID or project name
         :rtype: :class:`<ArtifactUriQueryResult> <azure.devops.v4_1.work-item-tracking.models.ArtifactUriQueryResult>`
         """
@@ -199,7 +199,7 @@ class WorkItemTrackingClient(Client):
     def create_or_update_classification_node(self, posted_node, project, structure_group, path=None):
         """CreateOrUpdateClassificationNode.
         Create new or update an existing classification node.
-        :param :class:`<WorkItemClassificationNode> <azure.devops.v4_1.work-item-tracking.models.WorkItemClassificationNode>` posted_node: Node to create or update.
+        :param :class:`<WorkItemClassificationNode> <azure.devops.v4_1.work_item_tracking.models.WorkItemClassificationNode>` posted_node: Node to create or update.
         :param str project: Project ID or project name
         :param TreeStructureGroup structure_group: Structure group of the classification node, area or iteration.
         :param str path: Path of the classification node.
@@ -273,7 +273,7 @@ class WorkItemTrackingClient(Client):
     def update_classification_node(self, posted_node, project, structure_group, path=None):
         """UpdateClassificationNode.
         Update an existing classification node.
-        :param :class:`<WorkItemClassificationNode> <azure.devops.v4_1.work-item-tracking.models.WorkItemClassificationNode>` posted_node: Node to create or update.
+        :param :class:`<WorkItemClassificationNode> <azure.devops.v4_1.work_item_tracking.models.WorkItemClassificationNode>` posted_node: Node to create or update.
         :param str project: Project ID or project name
         :param TreeStructureGroup structure_group: Structure group of the classification node, area or iteration.
         :param str path: Path of the classification node.
@@ -401,7 +401,7 @@ class WorkItemTrackingClient(Client):
     def update_field(self, work_item_field, field_name_or_ref_name, project=None):
         """UpdateField.
         Updates the field.
-        :param :class:`<WorkItemField> <azure.devops.v4_1.work-item-tracking.models.WorkItemField>` work_item_field: New field definition
+        :param :class:`<WorkItemField> <azure.devops.v4_1.work_item_tracking.models.WorkItemField>` work_item_field: New field definition
         :param str field_name_or_ref_name: Field simple name or reference name
         :param str project: Project ID or project name
         """
@@ -420,7 +420,7 @@ class WorkItemTrackingClient(Client):
     def create_query(self, posted_query, project, query):
         """CreateQuery.
         Creates a query, or moves a query.
-        :param :class:`<QueryHierarchyItem> <azure.devops.v4_1.work-item-tracking.models.QueryHierarchyItem>` posted_query: The query to create.
+        :param :class:`<QueryHierarchyItem> <azure.devops.v4_1.work_item_tracking.models.QueryHierarchyItem>` posted_query: The query to create.
         :param str project: Project ID or project name
         :param str query: The parent path for the query to create.
         :rtype: :class:`<QueryHierarchyItem> <azure.devops.v4_1.work-item-tracking.models.QueryHierarchyItem>`
@@ -541,7 +541,7 @@ class WorkItemTrackingClient(Client):
     def update_query(self, query_update, project, query, undelete_descendants=None):
         """UpdateQuery.
         Update a query or a folder. This allows you to update, rename and move queries and folders.
-        :param :class:`<QueryHierarchyItem> <azure.devops.v4_1.work-item-tracking.models.QueryHierarchyItem>` query_update: The query to update.
+        :param :class:`<QueryHierarchyItem> <azure.devops.v4_1.work_item_tracking.models.QueryHierarchyItem>` query_update: The query to update.
         :param str project: Project ID or project name
         :param str query: The path for the query to update.
         :param bool undelete_descendants: Undelete the children of this folder. It is important to note that this will not bring back the permission changes that were previously applied to the descendants.
@@ -637,7 +637,7 @@ class WorkItemTrackingClient(Client):
     def restore_work_item(self, payload, id, project=None):
         """RestoreWorkItem.
         Restores the deleted work item from Recycle Bin.
-        :param :class:`<WorkItemDeleteUpdate> <azure.devops.v4_1.work-item-tracking.models.WorkItemDeleteUpdate>` payload: Paylod with instructions to update the IsDeleted flag to false
+        :param :class:`<WorkItemDeleteUpdate> <azure.devops.v4_1.work_item_tracking.models.WorkItemDeleteUpdate>` payload: Paylod with instructions to update the IsDeleted flag to false
         :param int id: ID of the work item to be restored
         :param str project: Project ID or project name
         :rtype: :class:`<WorkItemDelete> <azure.devops.v4_1.work-item-tracking.models.WorkItemDelete>`
@@ -707,8 +707,8 @@ class WorkItemTrackingClient(Client):
     def create_template(self, template, team_context):
         """CreateTemplate.
         [Preview API] Creates a template
-        :param :class:`<WorkItemTemplate> <azure.devops.v4_1.work-item-tracking.models.WorkItemTemplate>` template: Template contents
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<WorkItemTemplate> <azure.devops.v4_1.work_item_tracking.models.WorkItemTemplate>` template: Template contents
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_1.work-item-tracking.models.WorkItemTemplate>`
         """
         project = None
@@ -739,7 +739,7 @@ class WorkItemTrackingClient(Client):
     def get_templates(self, team_context, workitemtypename=None):
         """GetTemplates.
         [Preview API] Gets template
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str workitemtypename: Optional, When specified returns templates for given Work item type.
         :rtype: [WorkItemTemplateReference]
         """
@@ -773,7 +773,7 @@ class WorkItemTrackingClient(Client):
     def delete_template(self, team_context, template_id):
         """DeleteTemplate.
         [Preview API] Deletes the template with given id
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str template_id: Template id
         """
         project = None
@@ -803,7 +803,7 @@ class WorkItemTrackingClient(Client):
     def get_template(self, team_context, template_id):
         """GetTemplate.
         [Preview API] Gets the template with specified id
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str template_id: Template Id
         :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_1.work-item-tracking.models.WorkItemTemplate>`
         """
@@ -835,8 +835,8 @@ class WorkItemTrackingClient(Client):
     def replace_template(self, template_content, team_context, template_id):
         """ReplaceTemplate.
         [Preview API] Replace template contents
-        :param :class:`<WorkItemTemplate> <azure.devops.v4_1.work-item-tracking.models.WorkItemTemplate>` template_content: Template contents to replace with
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<WorkItemTemplate> <azure.devops.v4_1.work_item_tracking.models.WorkItemTemplate>` template_content: Template contents to replace with
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param str template_id: Template id
         :rtype: :class:`<WorkItemTemplate> <azure.devops.v4_1.work-item-tracking.models.WorkItemTemplate>`
         """
@@ -911,8 +911,8 @@ class WorkItemTrackingClient(Client):
     def query_by_wiql(self, wiql, team_context=None, time_precision=None, top=None):
         """QueryByWiql.
         Gets the results of the query given its WIQL.
-        :param :class:`<Wiql> <azure.devops.v4_1.work-item-tracking.models.Wiql>` wiql: The query containing the WIQL.
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<Wiql> <azure.devops.v4_1.work_item_tracking.models.Wiql>` wiql: The query containing the WIQL.
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param bool time_precision: Whether or not to use time precision.
         :param int top: The max number of results to return.
         :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_1.work-item-tracking.models.WorkItemQueryResult>`
@@ -952,7 +952,7 @@ class WorkItemTrackingClient(Client):
         """GetQueryResultCount.
         Gets the results of the query given the query ID.
         :param str id: The query ID.
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param bool time_precision: Whether or not to use time precision.
         :rtype: int
         """
@@ -989,7 +989,7 @@ class WorkItemTrackingClient(Client):
         """QueryById.
         Gets the results of the query given the query ID.
         :param str id: The query ID.
-        :param :class:`<TeamContext> <azure.devops.v4_1.work-item-tracking.models.TeamContext>` team_context: The team context for the operation
+        :param :class:`<TeamContext> <azure.devops.v4_1.work_item_tracking.models.TeamContext>` team_context: The team context for the operation
         :param bool time_precision: Whether or not to use time precision.
         :rtype: :class:`<WorkItemQueryResult> <azure.devops.v4_1.work-item-tracking.models.WorkItemQueryResult>`
         """
@@ -1194,7 +1194,7 @@ class WorkItemTrackingClient(Client):
     def read_reporting_revisions_post(self, filter, project=None, continuation_token=None, start_date_time=None, expand=None):
         """ReadReportingRevisionsPost.
         Get a batch of work item revisions. This request may be used if your list of fields is large enough that it may run the URL over the length limit.
-        :param :class:`<ReportingWorkItemRevisionsFilter> <azure.devops.v4_1.work-item-tracking.models.ReportingWorkItemRevisionsFilter>` filter: An object that contains request settings: field filter, type filter, identity format
+        :param :class:`<ReportingWorkItemRevisionsFilter> <azure.devops.v4_1.work_item_tracking.models.ReportingWorkItemRevisionsFilter>` filter: An object that contains request settings: field filter, type filter, identity format
         :param str project: Project ID or project name
         :param str continuation_token: Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
         :param datetime start_date_time: Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with 'watermark' parameter.
@@ -1223,7 +1223,7 @@ class WorkItemTrackingClient(Client):
     def create_work_item(self, document, project, type, validate_only=None, bypass_rules=None, suppress_notifications=None):
         """CreateWorkItem.
         Creates a single work item.
-        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_1.work-item-tracking.models.[JsonPatchOperation]>` document: The JSON Patch document representing the work item
+        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_1.work_item_tracking.models.[JsonPatchOperation]>` document: The JSON Patch document representing the work item
         :param str project: Project ID or project name
         :param str type: The work item type of the work item to create
         :param bool validate_only: Indicate if you only want to validate the changes without saving the work item
@@ -1372,7 +1372,7 @@ class WorkItemTrackingClient(Client):
     def update_work_item(self, document, id, project=None, validate_only=None, bypass_rules=None, suppress_notifications=None):
         """UpdateWorkItem.
         Updates a single work item.
-        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_1.work-item-tracking.models.[JsonPatchOperation]>` document: The JSON Patch document representing the update
+        :param :class:`<[JsonPatchOperation]> <azure.devops.v4_1.work_item_tracking.models.[JsonPatchOperation]>` document: The JSON Patch document representing the update
         :param int id: The id of the work item to update
         :param str project: Project ID or project name
         :param bool validate_only: Indicate if you only want to validate the changes without saving the work item

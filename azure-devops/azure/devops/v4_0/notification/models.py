@@ -271,7 +271,7 @@ class InputValues(Model):
     :param default_value: The default value to use for this input
     :type default_value: str
     :param error: Errors encountered while computing dynamic values.
-    :type error: :class:`InputValuesError <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValuesError>`
+    :type error: :class:`InputValuesError <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValuesError>`
     :param input_id: The id of the input
     :type input_id: str
     :param is_disabled: Should this input be disabled
@@ -281,7 +281,7 @@ class InputValues(Model):
     :param is_read_only: Should this input be made read-only
     :type is_read_only: bool
     :param possible_values: Possible values that this input can take
-    :type possible_values: list of :class:`InputValue <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValue>`
+    :type possible_values: list of :class:`InputValue <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValue>`
     """
 
     _attribute_map = {
@@ -327,7 +327,7 @@ class InputValuesQuery(Model):
     :param current_values:
     :type current_values: dict
     :param input_values: The input values to return on input, and the result from the consumer on output.
-    :type input_values: list of :class:`InputValues <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.InputValues>`
+    :type input_values: list of :class:`InputValues <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.InputValues>`
     :param resource: Subscription containing information about the publisher/consumer and the current input values
     :type resource: object
     """
@@ -1267,7 +1267,7 @@ class VssNotificationEvent(Model):
     """VssNotificationEvent.
 
     :param actors: Optional: A list of actors which are additional identities with corresponding roles that are relevant to the event.
-    :type actors: list of :class:`EventActor <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.EventActor>`
+    :type actors: list of :class:`EventActor <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.EventActor>`
     :param artifact_uris: Optional: A list of artifacts referenced or impacted by this event.
     :type artifact_uris: list of str
     :param data: Required: The event payload.  If Data is a string, it must be in Json or XML format.  Otherwise it must have a serialization format attribute.
@@ -1275,7 +1275,7 @@ class VssNotificationEvent(Model):
     :param event_type: Required: The name of the event.  This event must be registered in the context it is being fired.
     :type event_type: str
     :param scopes: Optional: A list of scopes which are are relevant to the event.
-    :type scopes: list of :class:`EventScope <azure.devops.v4_0.microsoft.-visual-studio.-services.-web-api.models.EventScope>`
+    :type scopes: list of :class:`EventScope <azure.devops.v4_0.microsoft._visual_studio._services._web_api.models.EventScope>`
     """
 
     _attribute_map = {

@@ -15,9 +15,9 @@ class Change(Model):
     :param change_type:
     :type change_type: object
     :param item:
-    :type item: :class:`GitItem <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitItem>`
+    :type item: :class:`GitItem <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitItem>`
     :param new_content:
-    :type new_content: :class:`ItemContent <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.ItemContent>`
+    :type new_content: :class:`ItemContent <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.ItemContent>`
     :param source_server_item:
     :type source_server_item: str
     :param url:
@@ -87,11 +87,11 @@ class GitCommitRef(Model):
     :param _links:
     :type _links: ReferenceLinks
     :param author:
-    :type author: :class:`GitUserDate <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitUserDate>`
+    :type author: :class:`GitUserDate <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitUserDate>`
     :param change_counts:
     :type change_counts: dict
     :param changes:
-    :type changes: list of :class:`object <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.object>`
+    :type changes: list of :class:`object <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.object>`
     :param comment:
     :type comment: str
     :param comment_truncated:
@@ -99,13 +99,13 @@ class GitCommitRef(Model):
     :param commit_id:
     :type commit_id: str
     :param committer:
-    :type committer: :class:`GitUserDate <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitUserDate>`
+    :type committer: :class:`GitUserDate <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitUserDate>`
     :param parents:
     :type parents: list of str
     :param remote_url:
     :type remote_url: str
     :param statuses:
-    :type statuses: list of :class:`GitStatus <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitStatus>`
+    :type statuses: list of :class:`GitStatus <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitStatus>`
     :param url:
     :type url: str
     :param work_items:
@@ -227,7 +227,7 @@ class GitRepository(Model):
     :param name:
     :type name: str
     :param parent_repository:
-    :type parent_repository: :class:`GitRepositoryRef <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitRepositoryRef>`
+    :type parent_repository: :class:`GitRepositoryRef <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitRepositoryRef>`
     :param project:
     :type project: TeamProjectReference
     :param remote_url:
@@ -307,7 +307,7 @@ class GitStatus(Model):
     :param _links: Reference links.
     :type _links: ReferenceLinks
     :param context: Context of the status.
-    :type context: :class:`GitStatusContext <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitStatusContext>`
+    :type context: :class:`GitStatusContext <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitStatusContext>`
     :param created_by: Identity that created the status.
     :type created_by: IdentityRef
     :param creation_date: Creation date and time of the status.
@@ -463,7 +463,7 @@ class ItemModel(Model):
     :param _links:
     :type _links: ReferenceLinks
     :param content_metadata:
-    :type content_metadata: :class:`FileContentMetadata <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.FileContentMetadata>`
+    :type content_metadata: :class:`FileContentMetadata <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.FileContentMetadata>`
     :param is_folder:
     :type is_folder: bool
     :param is_sym_link:
@@ -671,7 +671,7 @@ class GitItem(ItemModel):
     :param _links:
     :type _links: ReferenceLinks
     :param content_metadata:
-    :type content_metadata: :class:`FileContentMetadata <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.FileContentMetadata>`
+    :type content_metadata: :class:`FileContentMetadata <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.FileContentMetadata>`
     :param is_folder:
     :type is_folder: bool
     :param is_sym_link:
@@ -685,7 +685,7 @@ class GitItem(ItemModel):
     :param git_object_type: Type of object (Commit, Tree, Blob, Tag, ...)
     :type git_object_type: object
     :param latest_processed_change: Shallow ref to commit that last changed this item Only populated if latestProcessedChange is requested May not be accurate if latest change is not yet cached
-    :type latest_processed_change: :class:`GitCommitRef <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitCommitRef>`
+    :type latest_processed_change: :class:`GitCommitRef <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitCommitRef>`
     :param object_id: Git object id
     :type object_id: str
     :param original_object_id: Git object id
@@ -731,11 +731,11 @@ class GitPush(GitPushRef):
     :param url:
     :type url: str
     :param commits:
-    :type commits: list of :class:`GitCommitRef <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitCommitRef>`
+    :type commits: list of :class:`GitCommitRef <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitCommitRef>`
     :param ref_updates:
-    :type ref_updates: list of :class:`GitRefUpdate <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitRefUpdate>`
+    :type ref_updates: list of :class:`GitRefUpdate <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitRefUpdate>`
     :param repository:
-    :type repository: :class:`GitRepository <azure.devops.v4_0.microsoft.-team-foundation.-source-control.-web-api.models.GitRepository>`
+    :type repository: :class:`GitRepository <azure.devops.v4_0.microsoft._team_foundation._source_control._web_api.models.GitRepository>`
     """
 
     _attribute_map = {

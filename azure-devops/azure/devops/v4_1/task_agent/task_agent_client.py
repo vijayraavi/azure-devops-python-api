@@ -28,7 +28,7 @@ class TaskAgentClient(Client):
     def add_deployment_group(self, deployment_group, project):
         """AddDeploymentGroup.
         [Preview API] Create a deployment group.
-        :param :class:`<DeploymentGroupCreateParameter> <azure.devops.v4_1.task-agent.models.DeploymentGroupCreateParameter>` deployment_group: Deployment group to create.
+        :param :class:`<DeploymentGroupCreateParameter> <azure.devops.v4_1.task_agent.models.DeploymentGroupCreateParameter>` deployment_group: Deployment group to create.
         :param str project: Project ID or project name
         :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task-agent.models.DeploymentGroup>`
         """
@@ -124,7 +124,7 @@ class TaskAgentClient(Client):
     def update_deployment_group(self, deployment_group, project, deployment_group_id):
         """UpdateDeploymentGroup.
         [Preview API] Update a deployment group.
-        :param :class:`<DeploymentGroupUpdateParameter> <azure.devops.v4_1.task-agent.models.DeploymentGroupUpdateParameter>` deployment_group: Deployment group to update.
+        :param :class:`<DeploymentGroupUpdateParameter> <azure.devops.v4_1.task_agent.models.DeploymentGroupUpdateParameter>` deployment_group: Deployment group to update.
         :param str project: Project ID or project name
         :param int deployment_group_id: ID of the deployment group.
         :rtype: :class:`<DeploymentGroup> <azure.devops.v4_1.task-agent.models.DeploymentGroup>`
@@ -256,7 +256,7 @@ class TaskAgentClient(Client):
     def add_task_group(self, task_group, project):
         """AddTaskGroup.
         [Preview API] Create a task group.
-        :param :class:`<TaskGroupCreateParameter> <azure.devops.v4_1.task-agent.models.TaskGroupCreateParameter>` task_group: Task group object to create.
+        :param :class:`<TaskGroupCreateParameter> <azure.devops.v4_1.task_agent.models.TaskGroupCreateParameter>` task_group: Task group object to create.
         :param str project: Project ID or project name
         :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task-agent.models.TaskGroup>`
         """
@@ -333,7 +333,7 @@ class TaskAgentClient(Client):
     def update_task_group(self, task_group, project, task_group_id=None):
         """UpdateTaskGroup.
         [Preview API] Update a task group.
-        :param :class:`<TaskGroupUpdateParameter> <azure.devops.v4_1.task-agent.models.TaskGroupUpdateParameter>` task_group: Task group to update.
+        :param :class:`<TaskGroupUpdateParameter> <azure.devops.v4_1.task_agent.models.TaskGroupUpdateParameter>` task_group: Task group to update.
         :param str project: Project ID or project name
         :param str task_group_id: Id of the task group to update.
         :rtype: :class:`<TaskGroup> <azure.devops.v4_1.task-agent.models.TaskGroup>`
@@ -354,7 +354,7 @@ class TaskAgentClient(Client):
     def add_variable_group(self, group, project):
         """AddVariableGroup.
         [Preview API] Add a variable group.
-        :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task-agent.models.VariableGroupParameters>` group: Variable group to add.
+        :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task_agent.models.VariableGroupParameters>` group: Variable group to add.
         :param str project: Project ID or project name
         :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task-agent.models.VariableGroup>`
         """
@@ -459,7 +459,7 @@ class TaskAgentClient(Client):
     def update_variable_group(self, group, project, group_id):
         """UpdateVariableGroup.
         [Preview API] Update a variable group.
-        :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task-agent.models.VariableGroupParameters>` group: Variable group to update.
+        :param :class:`<VariableGroupParameters> <azure.devops.v4_1.task_agent.models.VariableGroupParameters>` group: Variable group to update.
         :param str project: Project ID or project name
         :param int group_id: Id of the variable group to update.
         :rtype: :class:`<VariableGroup> <azure.devops.v4_1.task-agent.models.VariableGroup>`

@@ -28,7 +28,7 @@ class WorkItemTrackingClient(Client):
     def create_behavior(self, behavior, process_id):
         """CreateBehavior.
         [Preview API]
-        :param :class:`<BehaviorCreateModel> <azure.devops.v4_0.work-item-tracking.models.BehaviorCreateModel>` behavior:
+        :param :class:`<BehaviorCreateModel> <azure.devops.v4_0.work_item_tracking.models.BehaviorCreateModel>` behavior:
         :param str process_id:
         :rtype: :class:`<BehaviorModel> <azure.devops.v4_0.work-item-tracking.models.BehaviorModel>`
         """
@@ -95,7 +95,7 @@ class WorkItemTrackingClient(Client):
     def replace_behavior(self, behavior_data, process_id, behavior_id):
         """ReplaceBehavior.
         [Preview API]
-        :param :class:`<BehaviorReplaceModel> <azure.devops.v4_0.work-item-tracking.models.BehaviorReplaceModel>` behavior_data:
+        :param :class:`<BehaviorReplaceModel> <azure.devops.v4_0.work_item_tracking.models.BehaviorReplaceModel>` behavior_data:
         :param str process_id:
         :param str behavior_id:
         :rtype: :class:`<BehaviorModel> <azure.devops.v4_0.work-item-tracking.models.BehaviorModel>`
@@ -116,7 +116,7 @@ class WorkItemTrackingClient(Client):
     def add_control_to_group(self, control, process_id, wit_ref_name, group_id):
         """AddControlToGroup.
         [Preview API] Creates a control, giving it an id, and adds it to the group. So far, the only controls that don't know how to generate their own ids are control extensions.
-        :param :class:`<Control> <azure.devops.v4_0.work-item-tracking.models.Control>` control:
+        :param :class:`<Control> <azure.devops.v4_0.work_item_tracking.models.Control>` control:
         :param str process_id:
         :param str wit_ref_name:
         :param str group_id:
@@ -140,7 +140,7 @@ class WorkItemTrackingClient(Client):
     def edit_control(self, control, process_id, wit_ref_name, group_id, control_id):
         """EditControl.
         [Preview API]
-        :param :class:`<Control> <azure.devops.v4_0.work-item-tracking.models.Control>` control:
+        :param :class:`<Control> <azure.devops.v4_0.work_item_tracking.models.Control>` control:
         :param str process_id:
         :param str wit_ref_name:
         :param str group_id:
@@ -189,7 +189,7 @@ class WorkItemTrackingClient(Client):
     def set_control_in_group(self, control, process_id, wit_ref_name, group_id, control_id, remove_from_group_id=None):
         """SetControlInGroup.
         [Preview API] Puts a control withan id into a group. Controls backed by fields can generate their own id.
-        :param :class:`<Control> <azure.devops.v4_0.work-item-tracking.models.Control>` control:
+        :param :class:`<Control> <azure.devops.v4_0.work_item_tracking.models.Control>` control:
         :param str process_id:
         :param str wit_ref_name:
         :param str group_id:
@@ -221,7 +221,7 @@ class WorkItemTrackingClient(Client):
     def create_field(self, field, process_id):
         """CreateField.
         [Preview API]
-        :param :class:`<FieldModel> <azure.devops.v4_0.work-item-tracking.models.FieldModel>` field:
+        :param :class:`<FieldModel> <azure.devops.v4_0.work_item_tracking.models.FieldModel>` field:
         :param str process_id:
         :rtype: :class:`<FieldModel> <azure.devops.v4_0.work-item-tracking.models.FieldModel>`
         """
@@ -239,7 +239,7 @@ class WorkItemTrackingClient(Client):
     def update_field(self, field, process_id):
         """UpdateField.
         [Preview API]
-        :param :class:`<FieldUpdate> <azure.devops.v4_0.work-item-tracking.models.FieldUpdate>` field:
+        :param :class:`<FieldUpdate> <azure.devops.v4_0.work_item_tracking.models.FieldUpdate>` field:
         :param str process_id:
         :rtype: :class:`<FieldModel> <azure.devops.v4_0.work-item-tracking.models.FieldModel>`
         """
@@ -257,7 +257,7 @@ class WorkItemTrackingClient(Client):
     def add_group(self, group, process_id, wit_ref_name, page_id, section_id):
         """AddGroup.
         [Preview API]
-        :param :class:`<Group> <azure.devops.v4_0.work-item-tracking.models.Group>` group:
+        :param :class:`<Group> <azure.devops.v4_0.work_item_tracking.models.Group>` group:
         :param str process_id:
         :param str wit_ref_name:
         :param str page_id:
@@ -284,7 +284,7 @@ class WorkItemTrackingClient(Client):
     def edit_group(self, group, process_id, wit_ref_name, page_id, section_id, group_id):
         """EditGroup.
         [Preview API]
-        :param :class:`<Group> <azure.devops.v4_0.work-item-tracking.models.Group>` group:
+        :param :class:`<Group> <azure.devops.v4_0.work_item_tracking.models.Group>` group:
         :param str process_id:
         :param str wit_ref_name:
         :param str page_id:
@@ -339,7 +339,7 @@ class WorkItemTrackingClient(Client):
     def set_group_in_page(self, group, process_id, wit_ref_name, page_id, section_id, group_id, remove_from_page_id, remove_from_section_id):
         """SetGroupInPage.
         [Preview API]
-        :param :class:`<Group> <azure.devops.v4_0.work-item-tracking.models.Group>` group:
+        :param :class:`<Group> <azure.devops.v4_0.work_item_tracking.models.Group>` group:
         :param str process_id:
         :param str wit_ref_name:
         :param str page_id:
@@ -377,7 +377,7 @@ class WorkItemTrackingClient(Client):
     def set_group_in_section(self, group, process_id, wit_ref_name, page_id, section_id, group_id, remove_from_section_id):
         """SetGroupInSection.
         [Preview API]
-        :param :class:`<Group> <azure.devops.v4_0.work-item-tracking.models.Group>` group:
+        :param :class:`<Group> <azure.devops.v4_0.work_item_tracking.models.Group>` group:
         :param str process_id:
         :param str wit_ref_name:
         :param str page_id:
@@ -440,7 +440,7 @@ class WorkItemTrackingClient(Client):
     def create_list(self, picklist):
         """CreateList.
         [Preview API]
-        :param :class:`<PickListModel> <azure.devops.v4_0.work-item-tracking.models.PickListModel>` picklist:
+        :param :class:`<PickListModel> <azure.devops.v4_0.work_item_tracking.models.PickListModel>` picklist:
         :rtype: :class:`<PickListModel> <azure.devops.v4_0.work-item-tracking.models.PickListModel>`
         """
         content = self._serialize.body(picklist, 'PickListModel')
@@ -481,7 +481,7 @@ class WorkItemTrackingClient(Client):
     def update_list(self, picklist, list_id):
         """UpdateList.
         [Preview API]
-        :param :class:`<PickListModel> <azure.devops.v4_0.work-item-tracking.models.PickListModel>` picklist:
+        :param :class:`<PickListModel> <azure.devops.v4_0.work_item_tracking.models.PickListModel>` picklist:
         :param str list_id:
         :rtype: :class:`<PickListModel> <azure.devops.v4_0.work-item-tracking.models.PickListModel>`
         """
@@ -499,7 +499,7 @@ class WorkItemTrackingClient(Client):
     def add_page(self, page, process_id, wit_ref_name):
         """AddPage.
         [Preview API]
-        :param :class:`<Page> <azure.devops.v4_0.work-item-tracking.models.Page>` page:
+        :param :class:`<Page> <azure.devops.v4_0.work_item_tracking.models.Page>` page:
         :param str process_id:
         :param str wit_ref_name:
         :rtype: :class:`<Page> <azure.devops.v4_0.work-item-tracking.models.Page>`
@@ -520,7 +520,7 @@ class WorkItemTrackingClient(Client):
     def edit_page(self, page, process_id, wit_ref_name):
         """EditPage.
         [Preview API]
-        :param :class:`<Page> <azure.devops.v4_0.work-item-tracking.models.Page>` page:
+        :param :class:`<Page> <azure.devops.v4_0.work_item_tracking.models.Page>` page:
         :param str process_id:
         :param str wit_ref_name:
         :rtype: :class:`<Page> <azure.devops.v4_0.work-item-tracking.models.Page>`
@@ -560,7 +560,7 @@ class WorkItemTrackingClient(Client):
     def create_state_definition(self, state_model, process_id, wit_ref_name):
         """CreateStateDefinition.
         [Preview API]
-        :param :class:`<WorkItemStateInputModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemStateInputModel>` state_model:
+        :param :class:`<WorkItemStateInputModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemStateInputModel>` state_model:
         :param str process_id:
         :param str wit_ref_name:
         :rtype: :class:`<WorkItemStateResultModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemStateResultModel>`
@@ -639,7 +639,7 @@ class WorkItemTrackingClient(Client):
     def hide_state_definition(self, hide_state_model, process_id, wit_ref_name, state_id):
         """HideStateDefinition.
         [Preview API]
-        :param :class:`<HideStateModel> <azure.devops.v4_0.work-item-tracking.models.HideStateModel>` hide_state_model:
+        :param :class:`<HideStateModel> <azure.devops.v4_0.work_item_tracking.models.HideStateModel>` hide_state_model:
         :param str process_id:
         :param str wit_ref_name:
         :param str state_id:
@@ -663,7 +663,7 @@ class WorkItemTrackingClient(Client):
     def update_state_definition(self, state_model, process_id, wit_ref_name, state_id):
         """UpdateStateDefinition.
         [Preview API]
-        :param :class:`<WorkItemStateInputModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemStateInputModel>` state_model:
+        :param :class:`<WorkItemStateInputModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemStateInputModel>` state_model:
         :param str process_id:
         :param str wit_ref_name:
         :param str state_id:
@@ -687,7 +687,7 @@ class WorkItemTrackingClient(Client):
     def add_behavior_to_work_item_type(self, behavior, process_id, wit_ref_name_for_behaviors):
         """AddBehaviorToWorkItemType.
         [Preview API]
-        :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeBehavior>` behavior:
+        :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeBehavior>` behavior:
         :param str process_id:
         :param str wit_ref_name_for_behaviors:
         :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeBehavior>`
@@ -766,7 +766,7 @@ class WorkItemTrackingClient(Client):
     def update_behavior_to_work_item_type(self, behavior, process_id, wit_ref_name_for_behaviors):
         """UpdateBehaviorToWorkItemType.
         [Preview API]
-        :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeBehavior>` behavior:
+        :param :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeBehavior>` behavior:
         :param str process_id:
         :param str wit_ref_name_for_behaviors:
         :rtype: :class:`<WorkItemTypeBehavior> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeBehavior>`
@@ -787,7 +787,7 @@ class WorkItemTrackingClient(Client):
     def create_work_item_type(self, work_item_type, process_id):
         """CreateWorkItemType.
         [Preview API]
-        :param :class:`<WorkItemTypeModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeModel>` work_item_type:
+        :param :class:`<WorkItemTypeModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeModel>` work_item_type:
         :param str process_id:
         :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeModel>`
         """
@@ -864,7 +864,7 @@ class WorkItemTrackingClient(Client):
     def update_work_item_type(self, work_item_type_update, process_id, wit_ref_name):
         """UpdateWorkItemType.
         [Preview API]
-        :param :class:`<WorkItemTypeUpdateModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeUpdateModel>` work_item_type_update:
+        :param :class:`<WorkItemTypeUpdateModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeUpdateModel>` work_item_type_update:
         :param str process_id:
         :param str wit_ref_name:
         :rtype: :class:`<WorkItemTypeModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeModel>`
@@ -885,7 +885,7 @@ class WorkItemTrackingClient(Client):
     def add_field_to_work_item_type(self, field, process_id, wit_ref_name_for_fields):
         """AddFieldToWorkItemType.
         [Preview API]
-        :param :class:`<WorkItemTypeFieldModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeFieldModel>` field:
+        :param :class:`<WorkItemTypeFieldModel> <azure.devops.v4_0.work_item_tracking.models.WorkItemTypeFieldModel>` field:
         :param str process_id:
         :param str wit_ref_name_for_fields:
         :rtype: :class:`<WorkItemTypeFieldModel> <azure.devops.v4_0.work-item-tracking.models.WorkItemTypeFieldModel>`

@@ -9,7 +9,10 @@ from msrest.service_client import ServiceClient
 from ._file_cache import RESOURCE_CACHE as RESOURCE_FILE_CACHE
 from .exceptions import AzureDevOpsClientRequestError
 from .v4_0.location.location_client import LocationClient
+from .v4_0.client_factory import ClientFactoryV4_0
+from .v4_1.client_factory import ClientFactoryV4_1
 from .client_configuration import ClientConfiguration
+
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +31,8 @@ class Connection(object):
         self.base_url = base_url
         self._creds = creds
         self._resource_areas = None
+        self.clients_v4_0 = ClientFactoryV4_0(self)
+        self.clients_v4_1 = ClientFactoryV4_1(self)
 
     def get_client(self, client_type):
         """get_client.
@@ -60,7 +65,7 @@ class Connection(object):
             resource_areas = self._get_resource_areas()
             if resource_areas is None:
                 raise AzureDevOpsClientRequestError(('Failed to retrieve resource areas '
-                                              + 'from server: {url}').format(url=self.base_url))
+                                                     + 'from server: {url}').format(url=self.base_url))
             if not resource_areas:
                 # For OnPrem environments we get an empty list.
                 return self.base_url

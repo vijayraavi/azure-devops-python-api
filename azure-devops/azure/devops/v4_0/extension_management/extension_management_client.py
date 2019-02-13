@@ -49,7 +49,7 @@ class ExtensionManagementClient(Client):
     def request_acquisition(self, acquisition_request):
         """RequestAcquisition.
         [Preview API]
-        :param :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension-management.models.ExtensionAcquisitionRequest>` acquisition_request:
+        :param :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension_management.models.ExtensionAcquisitionRequest>` acquisition_request:
         :rtype: :class:`<ExtensionAcquisitionRequest> <azure.devops.v4_0.extension-management.models.ExtensionAcquisitionRequest>`
         """
         content = self._serialize.body(acquisition_request, 'ExtensionAcquisitionRequest')
@@ -83,7 +83,7 @@ class ExtensionManagementClient(Client):
     def create_document_by_name(self, doc, publisher_name, extension_name, scope_type, scope_value, collection_name):
         """CreateDocumentByName.
         [Preview API]
-        :param :class:`<object> <azure.devops.v4_0.extension-management.models.object>` doc:
+        :param :class:`<object> <azure.devops.v4_0.extension_management.models.object>` doc:
         :param str publisher_name:
         :param str extension_name:
         :param str scope_type:
@@ -198,7 +198,7 @@ class ExtensionManagementClient(Client):
     def set_document_by_name(self, doc, publisher_name, extension_name, scope_type, scope_value, collection_name):
         """SetDocumentByName.
         [Preview API]
-        :param :class:`<object> <azure.devops.v4_0.extension-management.models.object>` doc:
+        :param :class:`<object> <azure.devops.v4_0.extension_management.models.object>` doc:
         :param str publisher_name:
         :param str extension_name:
         :param str scope_type:
@@ -228,7 +228,7 @@ class ExtensionManagementClient(Client):
     def update_document_by_name(self, doc, publisher_name, extension_name, scope_type, scope_value, collection_name):
         """UpdateDocumentByName.
         [Preview API]
-        :param :class:`<object> <azure.devops.v4_0.extension-management.models.object>` doc:
+        :param :class:`<object> <azure.devops.v4_0.extension_management.models.object>` doc:
         :param str publisher_name:
         :param str extension_name:
         :param str scope_type:
@@ -258,7 +258,7 @@ class ExtensionManagementClient(Client):
     def query_collections_by_name(self, collection_query, publisher_name, extension_name):
         """QueryCollectionsByName.
         [Preview API]
-        :param :class:`<ExtensionDataCollectionQuery> <azure.devops.v4_0.extension-management.models.ExtensionDataCollectionQuery>` collection_query:
+        :param :class:`<ExtensionDataCollectionQuery> <azure.devops.v4_0.extension_management.models.ExtensionDataCollectionQuery>` collection_query:
         :param str publisher_name:
         :param str extension_name:
         :rtype: [ExtensionDataCollection]
@@ -300,7 +300,7 @@ class ExtensionManagementClient(Client):
     def query_extensions(self, query):
         """QueryExtensions.
         [Preview API]
-        :param :class:`<InstalledExtensionQuery> <azure.devops.v4_0.extension-management.models.InstalledExtensionQuery>` query:
+        :param :class:`<InstalledExtensionQuery> <azure.devops.v4_0.extension_management.models.InstalledExtensionQuery>` query:
         :rtype: [InstalledExtension]
         """
         content = self._serialize.body(query, 'InstalledExtensionQuery')
@@ -338,7 +338,7 @@ class ExtensionManagementClient(Client):
     def update_installed_extension(self, extension):
         """UpdateInstalledExtension.
         [Preview API]
-        :param :class:`<InstalledExtension> <azure.devops.v4_0.extension-management.models.InstalledExtension>` extension:
+        :param :class:`<InstalledExtension> <azure.devops.v4_0.extension_management.models.InstalledExtension>` extension:
         :rtype: :class:`<InstalledExtension> <azure.devops.v4_0.extension-management.models.InstalledExtension>`
         """
         content = self._serialize.body(extension, 'InstalledExtension')

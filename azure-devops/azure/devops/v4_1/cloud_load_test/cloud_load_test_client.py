@@ -27,7 +27,7 @@ class CloudLoadTestClient(Client):
 
     def create_agent_group(self, group):
         """CreateAgentGroup.
-        :param :class:`<AgentGroup> <azure.devops.v4_1.cloud-load-test.models.AgentGroup>` group: Agent group to be created
+        :param :class:`<AgentGroup> <azure.devops.v4_1.cloud_load_test.models.AgentGroup>` group: Agent group to be created
         :rtype: :class:`<AgentGroup> <azure.devops.v4_1.cloud-load-test.models.AgentGroup>`
         """
         content = self._serialize.body(group, 'AgentGroup')
@@ -172,7 +172,7 @@ class CloudLoadTestClient(Client):
 
     def get_counter_samples(self, counter_sample_query_details, test_run_id):
         """GetCounterSamples.
-        :param :class:`<VssJsonCollectionWrapper> <azure.devops.v4_1.cloud-load-test.models.VssJsonCollectionWrapper>` counter_sample_query_details:
+        :param :class:`<VssJsonCollectionWrapper> <azure.devops.v4_1.cloud_load_test.models.VssJsonCollectionWrapper>` counter_sample_query_details:
         :param str test_run_id: The test run identifier
         :rtype: :class:`<CounterSamplesResult> <azure.devops.v4_1.cloud-load-test.models.CounterSamplesResult>`
         """
@@ -265,7 +265,7 @@ class CloudLoadTestClient(Client):
 
     def create_test_definition(self, test_definition):
         """CreateTestDefinition.
-        :param :class:`<TestDefinition> <azure.devops.v4_1.cloud-load-test.models.TestDefinition>` test_definition: Test definition to be created
+        :param :class:`<TestDefinition> <azure.devops.v4_1.cloud_load_test.models.TestDefinition>` test_definition: Test definition to be created
         :rtype: :class:`<TestDefinition> <azure.devops.v4_1.cloud-load-test.models.TestDefinition>`
         """
         content = self._serialize.body(test_definition, 'TestDefinition')
@@ -311,7 +311,7 @@ class CloudLoadTestClient(Client):
 
     def update_test_definition(self, test_definition):
         """UpdateTestDefinition.
-        :param :class:`<TestDefinition> <azure.devops.v4_1.cloud-load-test.models.TestDefinition>` test_definition:
+        :param :class:`<TestDefinition> <azure.devops.v4_1.cloud_load_test.models.TestDefinition>` test_definition:
         :rtype: :class:`<TestDefinition> <azure.devops.v4_1.cloud-load-test.models.TestDefinition>`
         """
         content = self._serialize.body(test_definition, 'TestDefinition')
@@ -323,7 +323,7 @@ class CloudLoadTestClient(Client):
 
     def create_test_drop(self, web_test_drop):
         """CreateTestDrop.
-        :param :class:`<Microsoft.VisualStudio.TestService.WebApiModel.TestDrop> <azure.devops.v4_1.cloud-load-test.models.Microsoft.VisualStudio.TestService.WebApiModel.TestDrop>` web_test_drop: Test drop to be created
+        :param :class:`<Microsoft.VisualStudio.TestService.WebApiModel.TestDrop> <azure.devops.v4_1.cloud_load_test.models.Microsoft.VisualStudio.TestService.WebApiModel.TestDrop>` web_test_drop: Test drop to be created
         :rtype: :class:`<Microsoft.VisualStudio.TestService.WebApiModel.TestDrop> <azure.devops.v4_1.cloud-load-test.models.Microsoft.VisualStudio.TestService.WebApiModel.TestDrop>`
         """
         content = self._serialize.body(web_test_drop, 'Microsoft.VisualStudio.TestService.WebApiModel.TestDrop')
@@ -349,7 +349,7 @@ class CloudLoadTestClient(Client):
 
     def create_test_run(self, web_test_run):
         """CreateTestRun.
-        :param :class:`<TestRun> <azure.devops.v4_1.cloud-load-test.models.TestRun>` web_test_run:
+        :param :class:`<TestRun> <azure.devops.v4_1.cloud_load_test.models.TestRun>` web_test_run:
         :rtype: :class:`<TestRun> <azure.devops.v4_1.cloud-load-test.models.TestRun>`
         """
         content = self._serialize.body(web_test_run, 'TestRun')
@@ -417,7 +417,7 @@ class CloudLoadTestClient(Client):
 
     def update_test_run(self, web_test_run, test_run_id):
         """UpdateTestRun.
-        :param :class:`<TestRun> <azure.devops.v4_1.cloud-load-test.models.TestRun>` web_test_run:
+        :param :class:`<TestRun> <azure.devops.v4_1.cloud_load_test.models.TestRun>` web_test_run:
         :param str test_run_id:
         """
         route_values = {}

@@ -1117,11 +1117,11 @@ class ProcessParameters(Model):
     """ProcessParameters.
 
     :param data_source_bindings:
-    :type data_source_bindings: list of :class:`DataSourceBindingBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.DataSourceBindingBase>`
+    :type data_source_bindings: list of :class:`DataSourceBindingBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.DataSourceBindingBase>`
     :param inputs:
-    :type inputs: list of :class:`TaskInputDefinitionBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskInputDefinitionBase>`
+    :type inputs: list of :class:`TaskInputDefinitionBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskInputDefinitionBase>`
     :param source_definitions:
-    :type source_definitions: list of :class:`TaskSourceDefinitionBase <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskSourceDefinitionBase>`
+    :type source_definitions: list of :class:`TaskSourceDefinitionBase <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskSourceDefinitionBase>`
     """
 
     _attribute_map = {
@@ -1283,7 +1283,7 @@ class TaskInputDefinitionBase(Model):
     :param type:
     :type type: str
     :param validation:
-    :type validation: :class:`TaskInputValidation <azure.devops.v4_0.microsoft.-team-foundation.-distributed-task.-common.-contracts.models.TaskInputValidation>`
+    :type validation: :class:`TaskInputValidation <azure.devops.v4_0.microsoft._team_foundation._distributed_task._common._contracts.models.TaskInputValidation>`
     :param visible_rule:
     :type visible_rule: str
     """

@@ -191,7 +191,7 @@ class ServiceHooksClient(Client):
 
     def query_notifications(self, query):
         """QueryNotifications.
-        :param :class:`<NotificationsQuery> <azure.devops.v4_0.service-hooks.models.NotificationsQuery>` query:
+        :param :class:`<NotificationsQuery> <azure.devops.v4_0.service_hooks.models.NotificationsQuery>` query:
         :rtype: :class:`<NotificationsQuery> <azure.devops.v4_0.service-hooks.models.NotificationsQuery>`
         """
         content = self._serialize.body(query, 'NotificationsQuery')
@@ -203,7 +203,7 @@ class ServiceHooksClient(Client):
 
     def query_input_values(self, input_values_query, publisher_id):
         """QueryInputValues.
-        :param :class:`<InputValuesQuery> <azure.devops.v4_0.service-hooks.models.InputValuesQuery>` input_values_query:
+        :param :class:`<InputValuesQuery> <azure.devops.v4_0.service_hooks.models.InputValuesQuery>` input_values_query:
         :param str publisher_id:
         :rtype: :class:`<InputValuesQuery> <azure.devops.v4_0.service-hooks.models.InputValuesQuery>`
         """
@@ -243,7 +243,7 @@ class ServiceHooksClient(Client):
 
     def query_publishers(self, query):
         """QueryPublishers.
-        :param :class:`<PublishersQuery> <azure.devops.v4_0.service-hooks.models.PublishersQuery>` query:
+        :param :class:`<PublishersQuery> <azure.devops.v4_0.service_hooks.models.PublishersQuery>` query:
         :rtype: :class:`<PublishersQuery> <azure.devops.v4_0.service-hooks.models.PublishersQuery>`
         """
         content = self._serialize.body(query, 'PublishersQuery')
@@ -255,7 +255,7 @@ class ServiceHooksClient(Client):
 
     def create_subscription(self, subscription):
         """CreateSubscription.
-        :param :class:`<Subscription> <azure.devops.v4_0.service-hooks.models.Subscription>` subscription:
+        :param :class:`<Subscription> <azure.devops.v4_0.service_hooks.models.Subscription>` subscription:
         :rtype: :class:`<Subscription> <azure.devops.v4_0.service-hooks.models.Subscription>`
         """
         content = self._serialize.body(subscription, 'Subscription')
@@ -316,7 +316,7 @@ class ServiceHooksClient(Client):
 
     def replace_subscription(self, subscription, subscription_id=None):
         """ReplaceSubscription.
-        :param :class:`<Subscription> <azure.devops.v4_0.service-hooks.models.Subscription>` subscription:
+        :param :class:`<Subscription> <azure.devops.v4_0.service_hooks.models.Subscription>` subscription:
         :param str subscription_id:
         :rtype: :class:`<Subscription> <azure.devops.v4_0.service-hooks.models.Subscription>`
         """
@@ -333,7 +333,7 @@ class ServiceHooksClient(Client):
 
     def create_subscriptions_query(self, query):
         """CreateSubscriptionsQuery.
-        :param :class:`<SubscriptionsQuery> <azure.devops.v4_0.service-hooks.models.SubscriptionsQuery>` query:
+        :param :class:`<SubscriptionsQuery> <azure.devops.v4_0.service_hooks.models.SubscriptionsQuery>` query:
         :rtype: :class:`<SubscriptionsQuery> <azure.devops.v4_0.service-hooks.models.SubscriptionsQuery>`
         """
         content = self._serialize.body(query, 'SubscriptionsQuery')
@@ -345,7 +345,7 @@ class ServiceHooksClient(Client):
 
     def create_test_notification(self, test_notification, use_real_data=None):
         """CreateTestNotification.
-        :param :class:`<Notification> <azure.devops.v4_0.service-hooks.models.Notification>` test_notification:
+        :param :class:`<Notification> <azure.devops.v4_0.service_hooks.models.Notification>` test_notification:
         :param bool use_real_data:
         :rtype: :class:`<Notification> <azure.devops.v4_0.service-hooks.models.Notification>`
         """
