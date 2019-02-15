@@ -9,6 +9,7 @@ from msrest.service_client import ServiceClient
 from ._file_cache import RESOURCE_CACHE as RESOURCE_FILE_CACHE
 from .exceptions import AzureDevOpsClientRequestError
 from .v4_0.location.location_client import LocationClient
+from .releases.client_factory import ClientFactory
 from .v4_0.client_factory import ClientFactoryV4_0
 from .v4_1.client_factory import ClientFactoryV4_1
 from .client_configuration import ClientConfiguration
@@ -31,6 +32,7 @@ class Connection(object):
         self.base_url = base_url
         self._creds = creds
         self._resource_areas = None
+        self.clients = ClientFactory(self)
         self.clients_v4_0 = ClientFactoryV4_0(self)
         self.clients_v4_1 = ClientFactoryV4_1(self)
 

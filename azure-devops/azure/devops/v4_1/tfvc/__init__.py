@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .tfvc_client import TfvcClient
 
 __all__ = [
     'AssociatedWorkItem',
@@ -46,4 +47,5 @@ __all__ = [
     'TfvcVersionDescriptor',
     'VersionControlProjectInfo',
     'VstsInfo',
+    'TfvcClient'
 ]

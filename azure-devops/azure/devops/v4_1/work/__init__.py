@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .work_client import WorkClient
 
 __all__ = [
     'Activity',
@@ -69,4 +70,5 @@ __all__ = [
     'WorkItemTrackingResourceReference',
     'WorkItemTypeReference',
     'WorkItemTypeStateInfo',
+    'WorkClient'
 ]

@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .build_client import BuildClient
 
 __all__ = [
     'AgentPoolQueue',
@@ -80,4 +81,5 @@ __all__ = [
     'VariableGroupReference',
     'WebApiConnectedServiceRef',
     'XamlBuildControllerReference',
+    'BuildClient'
 ]

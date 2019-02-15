@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .release_client import ReleaseClient
 
 __all__ = [
     'AgentArtifactDefinition',
@@ -98,4 +99,5 @@ __all__ = [
     'VariableValue',
     'WorkflowTask',
     'WorkflowTaskReference',
+    'ReleaseClient'
 ]

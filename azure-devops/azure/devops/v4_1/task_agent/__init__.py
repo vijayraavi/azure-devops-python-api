@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .task_agent_client import TaskAgentClient
 
 __all__ = [
     'AadOauthTokenRequest',
@@ -114,4 +115,5 @@ __all__ = [
     'VariableGroupParameters',
     'VariableGroupProviderData',
     'VariableValue',
+    'TaskAgentClient'
 ]
