@@ -9,7 +9,7 @@ from msrest.service_client import ServiceClient
 from ._file_cache import RESOURCE_CACHE as RESOURCE_FILE_CACHE
 from .exceptions import AzureDevOpsClientRequestError
 from .v4_0.location.location_client import LocationClient
-from .released.client_factory import ClientFactory
+from .client_factory import ClientFactory
 from .v4_0.client_factory import ClientFactoryV4_0
 from .v4_1.client_factory import ClientFactoryV4_1
 from .client_configuration import ClientConfiguration
