@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .notification_client import NotificationClient
 
 __all__ = [
     'ArtifactFilter',
@@ -60,4 +61,5 @@ __all__ = [
     'SubscriptionUserSettings',
     'ValueDefinition',
     'VssNotificationEvent',
+    'NotificationClient'
 ]

@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .location_client import LocationClient
 
 __all__ = [
     'AccessMapping',
@@ -16,4 +17,5 @@ __all__ = [
     'LocationServiceData',
     'ResourceAreaInfo',
     'ServiceDefinition',
+    'LocationClient'
 ]

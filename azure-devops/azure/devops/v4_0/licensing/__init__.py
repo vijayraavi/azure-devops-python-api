@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .licensing_client import LicensingClient
 
 __all__ = [
     'AccountEntitlement',
@@ -26,4 +27,5 @@ __all__ = [
     'IUsageRight',
     'License',
     'MsdnEntitlement',
+    'LicensingClient'
 ]

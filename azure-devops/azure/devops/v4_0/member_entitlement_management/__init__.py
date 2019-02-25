@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .member_entitlement_management_client import MemberEntitlementManagementClient
 
 __all__ = [
     'AccessLevel',
@@ -31,4 +32,5 @@ __all__ = [
     'ProjectRef',
     'ReferenceLinks',
     'TeamRef',
+    'MemberEntitlementManagementClient'
 ]

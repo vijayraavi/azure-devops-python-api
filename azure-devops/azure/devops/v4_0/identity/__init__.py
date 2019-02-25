@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .identity_client import IdentityClient
 
 __all__ = [
     'AccessTokenResult',
@@ -25,4 +26,5 @@ __all__ = [
     'JsonWebToken',
     'RefreshTokenGrant',
     'TenantInfo',
+    'IdentityClient'
 ]

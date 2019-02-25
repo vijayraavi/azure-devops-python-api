@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .service_hooks_client import ServiceHooksClient
 
 __all__ = [
     'Consumer',
@@ -38,4 +39,5 @@ __all__ = [
     'Subscription',
     'SubscriptionsQuery',
     'VersionedResource',
+    'ServiceHooksClient'
 ]

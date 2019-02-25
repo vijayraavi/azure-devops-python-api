@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .core_client import CoreClient
 
 __all__ = [
     'IdentityData',
@@ -30,4 +31,5 @@ __all__ = [
     'WebApiConnectedServiceRef',
     'WebApiTeam',
     'WebApiTeamRef',
+    'CoreClient'
 ]

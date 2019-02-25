@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .work_item_tracking_process_definitions_client import WorkItemTrackingProcessDefinitionsClient
 
 __all__ = [
     'BehaviorCreateModel',
@@ -32,4 +33,5 @@ __all__ = [
     'WorkItemTypeFieldModel',
     'WorkItemTypeModel',
     'WorkItemTypeUpdateModel',
+    'WorkItemTrackingProcessDefinitionsClient'
 ]

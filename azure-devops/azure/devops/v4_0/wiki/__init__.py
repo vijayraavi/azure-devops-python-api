@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .wiki_client import WikiClient
 
 __all__ = [
     'Change',
@@ -33,4 +34,5 @@ __all__ = [
     'WikiPageChange',
     'WikiRepository',
     'WikiUpdate',
+    'WikiClient'
 ]

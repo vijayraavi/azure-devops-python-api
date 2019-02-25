@@ -7,6 +7,7 @@
 # --------------------------------------------------------------------------------------------
 
 from .models import *
+from .extension_management_client import ExtensionManagementClient
 
 __all__ = [
     'AcquisitionOperation',
@@ -45,4 +46,5 @@ __all__ = [
     'PublisherFacts',
     'RequestedExtension',
     'UserExtensionPolicy',
+    'ExtensionManagementClient'
 ]
